@@ -74,11 +74,25 @@
       </ol>
     </section>
     <section>
-      <h2>Поиск гостиницы</h2>
+      <h2>Поиск гостиницы в Седоне</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы подскажем вам лучшие предложения гостиниц в Седоне</p>
       <!--Здесь будет форма-->
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="arrival-field">Дата заезда:</label>
+        <input type="text" name="arrivalDate" id="arrival-field">
+        <br>
+        <label for="departure-field">Дата выезда:</label>
+        <input type="text" name="departureDate" id="departure-field">
+        <br>
+        <label for="adults-field">Взрослые:</label>
+        <input type="text" name="adults" id="adults-field">
+        <label for="children-field">Дети:</label>
+        <input type="text" name="children" id="children-field">
+<br>
+<button type="submit">Найти</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -96,5 +110,13 @@
       <a href="https://htmlacademy.ru">html academy</a>
     </div>
   </footer>
+  <section>
+    <h2>Поиск гостиницы в Седоне</h2>
+    <button type="button">Закрыть</button>
+  </section>
+  <section>
+    <h2>Седона</h2>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 </html>
