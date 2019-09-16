@@ -7,7 +7,8 @@
 <body>
   <header>
     <nav>
-      <a href="#"> <img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип сайта Седона"></a>
+      <a href="#" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="100" height="50"
+          alt="Логотип сайта Седона"></a>
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -17,7 +18,21 @@
     </nav>
   </header>
   <main>
-    <h1>Sedona</h1>
+    <h1 class="visually-hidden">Седона</h1>
+    <section>
+      <h2 class="visually-hidden">Приветствие</h2>
+      <ul>
+        <li>
+          <p>Welcome<br>to the gorgeous</p>
+        </li>
+        <li>
+          <p>Sedona</p>
+        </li>
+        <li>
+          <p>"Becouse the Grand<br>Canyon sucks!"</p>
+        </li>
+      </ul>
+    </section>
     <section>
       <h2>Седона - небольшой городок в Аризоне, <br>
         заслуживающий большего!</h2>
@@ -27,21 +42,24 @@
           <p>Настоящий городок</p>
           <p>Седона - не аттракцион для туристов, <br>
             там течет своя жизнь</p>
-            <figure>
-                <img src="img/reason_one.jpg" width="260" height="80" alt="Изображение города">
-            </figure>
+          <figure>
+            <img src="img/reason_one.jpg" width="260" height="80" alt="Изображение города">
+          </figure>
           <ul>
-            <li><img src="img/icon-1.svg">
+            <li>
+              <img src="img/icon-1.svg">
               <p>Жилье</p>
               <p>Рекомендуем пожить в настоящем <br>
                 мотеле, все как в кино!</p>
             </li>
-            <li><img src="img/icon-3.svg">
+            <li>
+              <img src="img/icon-3.svg">
               <p>Еда</p>
               <p>Всегда заказывайте фирменный бургер,<br>
                 вы не разочаруетесь!</p>
             </li>
-            <li><img src="img/icon-2.svg">
+            <li>
+              <img src="img/icon-2.svg">
               <p>Сувениры</p>
               <p>Не только китайского, но и местного<br>
                 производства!</p>
@@ -52,9 +70,9 @@
           <p>Там есть мост дьявола</p>
           <p>Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
-            <figure>
-                <img src="img/reason_two.jpg" width="260" height="80" alt="Изображение гор">
-            </figure>
+          <figure>
+            <img src="img/reason_two.jpg" width="260" height="80" alt="Изображение гор">
+          </figure>
         </li>
         <li>
           <p>Небольшая площадь</p>
@@ -74,25 +92,35 @@
       </ol>
     </section>
     <section>
-      <h2>Поиск гостиницы в Седоне</h2>
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы подскажем вам лучшие предложения гостиниц в Седоне</p>
       <!--Здесь будет форма-->
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <label for="arrival-field">Дата заезда:</label>
-        <input type="text" name="arrivalDate" id="arrival-field">
-        <br>
-        <label for="departure-field">Дата выезда:</label>
-        <input type="text" name="departureDate" id="departure-field">
-        <br>
-        <label for="adults-field">Взрослые:</label>
-        <input type="text" name="adults" id="adults-field">
-        <label for="children-field">Дети:</label>
-        <input type="text" name="children" id="children-field">
-<br>
-<button type="submit">Найти</button>
-      </form>
+      <div>
+        <h3>Поиск гостиницы в Седоне</h3>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="arrival">Дата заезда:</label>
+            <input id="arrival" type="text" name="arrivaldate" value="" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="departure">Дата выезда:</label>
+            <input id="departure" type="text" name="departuredate" value="" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="adults-field">Взрослые:</label>
+            <input id="adults-field" type="number" name="adults" value="" placeholder="2">
+          </p>
+          <p>
+            <label for="children-field">Дети:</label>
+            <input id="children-field" type="number" name="children" value="" placeholder="0">
+          </p>
+          <p>
+            <button type="submit">Найти</button>
+          </p>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
@@ -101,13 +129,13 @@
     </div>
     <div>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере">Твиттер</a></li>
+        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке">Фейсбук</a></li>
+        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'>Ютуб</a></li>
       </ul>
     </div>
     <div>website by
-      <a href="https://htmlacademy.ru">html academy</a>
+      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии">html academy</a>
     </div>
   </footer>
   <section>
