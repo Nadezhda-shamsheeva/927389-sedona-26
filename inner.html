@@ -17,8 +17,75 @@
     </nav>
   </header>
   <main>
-    <li>
-      <h1>Предложение гостиниц в Седоне</h1>
+    <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
+    <section>
+      <h2 class="visually-hidden">Параметры для сортировки</h2>
+      <form action="https://echo.htmlacademy.ru method=" POST">
+        <div>
+          <p>Инфраструктура:</p>
+          <label>
+            <input type="checkbox" name="pool" checked>
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="parking">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="Wi-Fi">
+            Wi-Fi
+          </label>
+        </div>
+        <div>
+          <p>Тип жилья:</p>
+          <label>
+            <input type="checkbox" name="hotel" checked>
+            Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="motel" checked>
+            Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="apartments" checked>
+            Апартаменты
+          </label>
+        </div>
+        <div>
+          <p>Стоимость в сутки (Р):</p>
+          <ul>
+            <li>
+              <input type="text" name="start" min="0" step="100" max="4000" placeholder="от 0">
+            </li>
+            <li>
+              <input type="text" name="finish" min="0" step="100" max="4000" placeholder="до 3000">
+            </li>
+            <li>
+              <input type="range" min="0" value="3000" step="100" max="4000">
+            </li>
+          </ul>
+        </div>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Вывод результатов сортировки</h2>
+      <div class="sorter">
+        <div>
+          <p>Найдено:</p>
+          <input type="text" name="quantity" value="" placeholder="3"> 
+        </div>
+        <div>
+          <p>Сортировка:</p>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+        </div>
+        <div>
+          <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a>
+          <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a>
+        </div>
+      </div>
       <ul>
         <li>
           <figure>
@@ -57,6 +124,7 @@
           <a href="#">Забронировать</a>
         </li>
       </ul>
+    </section>
   </main>
   <footer>
     <div>
