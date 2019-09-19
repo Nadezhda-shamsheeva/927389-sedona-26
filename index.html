@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -10,10 +12,10 @@
       <a href="#" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="100" height="50"
           alt="Логотип сайта Седона"></a>
       <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
+        <li><a href="#" aria-label="Информационный блок">Информация</a></li>
+        <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
+        <li><a href="#" aria-label="Карта штата">Карта штата</a></li>
+        <li><a href="inner.html" aria-label="Гостиницы Седоны">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -47,19 +49,19 @@
           </figure>
           <ul>
             <li>
-              <img src="img/icon-1.svg">
+              <img src="img/icon-1.svg" width="30" height="30" alt="Графическое изображение дома">
               <p>Жилье</p>
               <p>Рекомендуем пожить в настоящем <br>
                 мотеле, все как в кино!</p>
             </li>
             <li>
-              <img src="img/icon-3.svg">
+              <img src="img/icon-3.svg" width="30" height="30" alt="Графическое изображение сэндвича">
               <p>Еда</p>
               <p>Всегда заказывайте фирменный бургер,<br>
                 вы не разочаруетесь!</p>
             </li>
             <li>
-              <img src="img/icon-2.svg">
+              <img src="img/icon-2.svg" width="30" height="30" alt="Графическое изображение подарка">
               <p>Сувениры</p>
               <p>Не только китайского, но и местного<br>
                 производства!</p>
@@ -96,7 +98,6 @@
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы подскажем вам лучшие предложения гостиниц в Седоне</p>
-      <!--Здесь будет форма-->
       <div>
         <h3>Поиск гостиницы в Седоне</h3>
         <form action="https://echo.htmlacademy.ru" method="POST">
@@ -125,17 +126,21 @@
   </main>
   <footer>
     <div>
-      <a href="#">#visitsedona</a>
+      <a href="#" aria-label="Посещаемость Седоны">#visitsedona</a>
     </div>
     <div>
       <ul>
-        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере">Твиттер</a></li>
-        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке">Фейсбук</a></li>
-        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'>Ютуб</a></li>
+        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере"><img src="img/twitter.svg" width="30"
+              height="30" alt="Иконка Твиттера">Твиттер</a></li>
+        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке"><img src="img/fb-icon.svg" width="30"
+              height="30" alt="Иконка Фейсбука">Фейсбук</a></li>
+        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'><img src="img/youtube.svg" width="30"
+              height="30" alt="Иконка Ютуба">Ютуб</a></li>
       </ul>
     </div>
     <div>website by
-      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии">html academy</a>
+      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии"><img src="img/logo-htmlacademy.svg" width="30"
+          height="30" alt="Логотип html академии"> html academy</a>
     </div>
   </footer>
   <section>
