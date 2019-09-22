@@ -1,19 +1,31 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
 
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
+html, 
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
     color: #000000;
     text-transform: uppercase;
 
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 img {
     max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto:
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 a {
@@ -21,8 +33,6 @@ a {
 }
 
 .nav {
-    font-size: 16px;
-    line-height: 20px;
     color: #000000;
     background-color: #ffffff;
 }
@@ -32,6 +42,7 @@ a {
 }
 
 .nav-list a {
+    font-weight: 700;
     color: #000000;
 }
 
@@ -47,3 +58,94 @@ a {
 .nav-list a:visited {
     color: #7f6d62;
 }
+
+.welcome {
+    height: 510px;
+
+    background-color: #81b3d2;
+    background-image: 
+    url("img/welcome.png") no-repeat 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  /*  url('img/top_bg.jpg') no-repeat 0 0;*/
+ /* url("img/intro-mask.svg");*/
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.content h3 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400px;
+    color: #696969;
+}
+
+.reason-one,
+.reason-two {
+    background-color: #81b3d2;
+}
+.reason-one p,
+.reason-two p,
+.reason-else p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400px;
+    color: #ffffff;
+}
+
+.reason-one p:first-child,
+.reason-two p:first-child { 
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.extra {
+    background-color: #ffffff;
+}
+
+.extra p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.extra li p:nth-child(2),
+.reason-else p:first-child {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.reason-else {
+    background-color: #eeeeee;
+}
+
+.reason-else p {
+    color: #656565;
+}
+
+.favour {
+    background-image: url('img/map.png');
+    background-repeat: no-repeat;
+}
+
+.favour p:nth-child(2) {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 700px;
+}
+
+.favour p:nth-child(3) {
+   font-size: 12px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #696969;
+}
+

@@ -6,10 +6,10 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="wrapper">
   <header class="header">
     <nav class="nav">
-      <a class="header-logo" href="#" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="100" height="50"
+      <a class="header-logo" href="#" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="140" height="70"
           alt="Логотип сайта Седона"></a>
       <ul class="nav-list">
         <li><a href="#" aria-label="Информационный блок">Информация</a></li>
@@ -21,84 +21,89 @@
   </header>
   <main>
     <h1 class="visually-hidden">Седона</h1>
-    <section>
+    <section class="welcome">
       <h2 class="visually-hidden">Приветствие</h2>
       <ul>
         <li>
-          <p>Welcome<br>to the gorgeous</p>
+          <p class="visually-hidden">Welcome<br>to the gorgeous</p>
         </li>
         <li>
-          <p>Sedona</p>
+          <p class="visually-hidden">Sedona</p>
         </li>
         <li>
-          <p>"Becouse the Grand<br>Canyon sucks!"</p>
+          <p class="visually-hidden">"Becouse the Grand<br>Canyon sucks!"</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="content">
       <h2>Седона - небольшой городок в Аризоне, <br>
         заслуживающий большего!</h2>
       <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
-      <ol>
-        <li>
+      <ol class="reasons">
+        <li class="reason-one">
           <p>Настоящий городок</p>
+          <p>№ 1</p>
           <p>Седона - не аттракцион для туристов, <br>
             там течет своя жизнь</p>
           <figure>
-            <img src="img/reason_one.jpg" width="260" height="80" alt="Изображение города">
+            <img src="img/reason_one.jpg" width="800" height="255" alt="Изображение города">
           </figure>
-          <ul>
+          <ul class='extra'>
             <li>
-              <img src="img/icon-1.svg" width="30" height="30" alt="Графическое изображение дома">
+              <img src="img/icon-1.svg" width="74" height="72" alt="Графическое изображение дома">
               <p>Жилье</p>
               <p>Рекомендуем пожить в настоящем <br>
                 мотеле, все как в кино!</p>
             </li>
             <li>
-              <img src="img/icon-3.svg" width="30" height="30" alt="Графическое изображение сэндвича">
+              <img src="img/icon-3.svg" width="74" height="72" alt="Графическое изображение сэндвича">
               <p>Еда</p>
               <p>Всегда заказывайте фирменный бургер,<br>
                 вы не разочаруетесь!</p>
             </li>
             <li>
-              <img src="img/icon-2.svg" width="30" height="30" alt="Графическое изображение подарка">
+              <img src="img/icon-2.svg" width="74" height="72" alt="Графическое изображение подарка">
               <p>Сувениры</p>
               <p>Не только китайского, но и местного<br>
                 производства!</p>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="reason-two">
           <p>Там есть мост дьявола</p>
+          <p>№ 2</p>
           <p>Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
           <figure>
-            <img src="img/reason_two.jpg" width="260" height="80" alt="Изображение гор">
+            <img src="img/reason_two.jpg" width="800" height="255" alt="Изображение гор">
           </figure>
         </li>
-        <li>
-          <p>Небольшая площадь</p>
+        <li class="reason-else">
+          <p>Небольшая<br>площадь</p>
+          <p>№ 3</p>
           <p>Все достопримечательности<br>
             находятся очень близко</p>
         </li>
-        <li>
-          <p>Красивая дорога</p>
+        <li class="reason-else">
+          <p>Красивая<br>дорога</p>
+          <p>№ 4</p>
           <p>Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно</p>
         </li>
-        <li>
-          <p>Мало туристов</p>
+        <li class="reason-else">
+          <p>Мало<br>туристов</p>
+          <p>№ 5</p>
           <p>Большинство едет в Гранд Каньон<br>
             и толпится там</p>
         </li>
       </ol>
     </section>
-    <section>
+    <section class="favour">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы подскажем вам лучшие предложения гостиниц в Седоне</p>
-      <div>
+      <div class="form">
         <h3>Поиск гостиницы в Седоне</h3>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p>
@@ -130,25 +135,25 @@
     </div>
     <div>
       <ul>
-        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере"><img src="img/twitter.svg" width="30"
-              height="30" alt="Иконка Твиттера">Твиттер</a></li>
-        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке"><img src="img/fb-icon.svg" width="30"
-              height="30" alt="Иконка Фейсбука">Фейсбук</a></li>
-        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'><img src="img/youtube.svg" width="30"
-              height="30" alt="Иконка Ютуба">Ютуб</a></li>
+        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере"><img src="img/twitter.svg" width="46"
+              height="48" alt="Иконка Твиттера">Твиттер</a></li>
+        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке"><img src="img/fb-icon.svg" width="46"
+              height="48" alt="Иконка Фейсбука">Фейсбук</a></li>
+        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'><img src="img/youtube.svg" width="46"
+              height="48" alt="Иконка Ютуба">Ютуб</a></li>
       </ul>
     </div>
     <div>website by
-      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии"><img src="img/logo-htmlacademy.svg" width="30"
-          height="30" alt="Логотип html академии"> html academy</a>
+      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии"><img src="img/logo-htmlacademy.svg" width="32"
+          height="38" alt="Логотип html академии"> html academy</a>
     </div>
   </footer>
   <section>
-    <h2>Поиск гостиницы в Седоне</h2>
+    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
     <button type="button">Закрыть</button>
   </section>
   <section>
-    <h2>Седона</h2>
+    <h2 class="visually-hidden">Седона</h2>
     <button type="button">Закрыть</button>
   </section>
 </body>
