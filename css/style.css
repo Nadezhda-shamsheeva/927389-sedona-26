@@ -24,6 +24,10 @@ img {
     background-color: #ffffff;
 }
 
+.inner-page {
+    background-color: #fefefe;
+}
+
 .visually-hidden {
     display: none;
 }
@@ -32,9 +36,14 @@ a {
     text-decoration: none;
 }
 
-.nav {
+.nav,
+.inner-nav {
     color: #000000;
     background-color: #ffffff;
+}
+
+.inner-nav {
+    background-color: #fefefe;
 }
 
 .nav-list {
@@ -51,12 +60,12 @@ a {
     color: #81b3d2;
 }
 
-.nav-list a:active {
-    color: #b2b2b2;
-}
-
 .nav-list a:visited {
     color: #7f6d62;
+}
+
+.nav-list a:active {
+    color: #b2b2b2;
 }
 
 .welcome {
@@ -64,11 +73,8 @@ a {
 
     background-color: #81b3d2;
     background-image: 
-    url("img/welcome.png") no-repeat 0 0;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  /*  url('img/top_bg.jpg') no-repeat 0 0;*/
- /* url("img/intro-mask.svg");*/
+    url("/img/top_bg2.jpg");
+    background-size: cover;
 }
 
 h2 {
@@ -132,7 +138,7 @@ h2 {
 }
 
 .favour {
-    background-image: url('img/map.png');
+    background-image: url('/img/map.png');
     background-repeat: no-repeat;
 }
 
@@ -147,5 +153,76 @@ h2 {
    line-height: 24px;
    font-weight: 400;
    color: #696969;
+}
+
+.form-search {
+    background-color: #ffffff;
+}
+
+.form-search h3,
+.button {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.form-search h3:hover {
+    background-color: #604e43;
+}
+
+.form-search h3:active {
+    color: #857871;
+    background-color: #503e33;
+}
+
+.form-search label,
+.form-search input[type="text"]  {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.form-search input[type="text"] {
+    background-color: #f2f2f2;
+}
+
+.form-search input[type="text"]:hover {
+    background-color: #ebebeb;
+}
+
+.form-search input[type="text"]:focus {
+    background-color: #ffffff;
+    border: 5px solid #e5e5e5;
+}
+.button {
+    background-color: #81b3d2;
+}
+.button:hover {
+    background-color: #669ec0;
+}
+
+.button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+.visits a {
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.footer-logo p {
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
