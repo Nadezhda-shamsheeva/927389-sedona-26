@@ -7,7 +7,7 @@ html,
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 16px;
     color: #000000;
     text-transform: uppercase;
 
@@ -24,10 +24,6 @@ img {
     background-color: #ffffff;
 }
 
-.inner-page {
-    background-color: #fefefe;
-}
-
 .visually-hidden {
     display: none;
 }
@@ -36,21 +32,12 @@ a {
     text-decoration: none;
 }
 
-.nav,
-.inner-nav {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.inner-nav {
-    background-color: #fefefe;
-}
-
 .nav-list {
     list-style: none;
 }
 
-.nav-list a {
+.nav-list li a {
+    background-color: #ffffff;
     font-weight: 700;
     color: #000000;
 }
@@ -121,6 +108,7 @@ h2 {
     color: #696969;
 }
 
+
 .extra li p:nth-child(2),
 .reason-else p:first-child {
     font-size: 18px;
@@ -142,7 +130,8 @@ h2 {
     background-repeat: no-repeat;
 }
 
-.favour p:nth-child(2) {
+.favour p:nth-child(2),
+.result {
     font-size: 22px;
     line-height: 40px;
     font-weight: 700px;
@@ -225,4 +214,32 @@ footer {
     line-height: 18px;
     font-weight: 400;
 }
+
+.inner-page {
+    max-width: 1200px;
+    margin: 0 auto:
+    background-color: #fefefe;
+}
+
+.result input,
+.result label[type="text"] {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #000000;
+    border: none; 
+}
+
+.menu a:first-of-type {
+    color: #81b3d2;
+}
+
+.menu a:nth-of-type(2),
+.menu a:last-of-type {
+    color: #b2b2b2;
+    border-bottom: 2px dotted #b2b2b2;
+}
+
+
+
 

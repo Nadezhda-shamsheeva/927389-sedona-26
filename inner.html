@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
-  <header>
-    <nav class="inner-nav">
-      <a class="header-logo" href="index.html" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип сайта Седона"></a>
+  <header class="header">
+    <nav class="main-nav">
+      <a class="header-logo" href="index.html" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
       <ul class="nav-list">
         <li><a href="#" aria-label="Информационный блок">Информация</a></li>
         <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
@@ -55,38 +57,43 @@
           <p>Стоимость в сутки (Р):</p>
           <ul>
             <li>
-              <input type="text" name="start" placeholder="от 0">
+                  <label class="visually-hidden" for="start-field">Ввод минимальной стоимости</label>
+                  <input id="start-field" type="text" name="start" placeholder="от 0">
             </li>
             <li>
-              <input type="text" name="finish" placeholder="до 3000">
+                  <label class="visually-hidden" for="finish-field">Ввод максимальной стоимости</label>
+                  <input id="finish-field" type="text" name="finish" placeholder="до 3000">
             </li>
             <li>
-              <input type="range" min="0" value="3000" step="100" max="4000">
+                  <label class="visually-hidden" for="range-field">"Бегунок" выбора стоимости</label>
+                  <input id="range-field" type="range" min="0" value="3000" step="100" max="4000">
             </li>
           </ul>
         </div>
-        <button type="submit">Показать</button>
+        <button class="inner-.button" type="submit">Показать</button>
       </form>
     </section>
     <section>
       <h2 class="visually-hidden">Вывод результатов сортировки</h2>
-      <div class="sorter">
-        <div>
-          <p>Найдено:</p>
+      <div class="sorted">
+        <div class="result">
+          <label>
+            Найдено:
           <input type="text" name="quantity" value="" placeholder="3"> 
+          </label>
         </div>
-        <div>
+        <div class="menu">
           <p>Сортировка:</p>
           <a href="#" aria-label="Сортировка гостиниц по цене">По цене</a>
           <a href="#" aria-label="Сортировка гостиниц по типу">По типу</a>
           <a href="#" aria-label="Сортировка гостиниц по рейтингу">По рейтингу</a>
         </div>
-        <div>
+        <div class="arrows">
           <a href="#" aria-label="Стрелка для продвижения вверх по списку"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Изображение стрелки вверх"></a>
           <a href="#" aria-label="Стрелка для продвижения вниз по списку"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Изображение стрелки вниз"></a>
         </div>
       </div>
-      <ul>
+      <ul class="performens">
         <li>
           <figure>
             <a href="#" aria-label="Фото и видео гостиниц Седоны"><img src="img/hotel-picture-1.jpg" width="100" height="50" alt="Изображение гостиницы"></a>
@@ -127,19 +134,22 @@
     </section>
   </main>
   <footer>
-    <div>
+    <div class="visits">
       <a href="#" aria-label="Посещаемость Седоны">#visitsedona</a>
     </div>
-    <div>
+    <div class="icon">
       <ul>
-        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере">Твиттер</a></li>
-        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке">Фейсбук</a></li>
-        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'>Ютуб</a></li>
+        <li><a href="https://twitter.com/" aria-label="Седона в Твиттере"><img src="img/twitter.svg" width="46" height="48" alt="Иконка Твиттера"></a></li>
+        <li><a href="https://facebook.com/" aria-label="Седона на Фейсбуке"><img src="img/fb-icon.svg" width="46"
+          height="48" alt="Иконка Фейсбука"></a></li>
+        <li><a href="https://youtube.com/" aria-label='Седона на Ютубе'><img src="img/youtube.svg" width="46"
+          height="48" alt="Иконка Ютуба"></a></li>
       </ul>
     </div>
-    <div>website by
-      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии"><img src="img/logo-htmlacademy.svg" width="30"
-        height="30" alt="Логотип html академии">html academy</a>
+    <div class="footer-logo">
+      <p>website by</p>
+      <a href="https://htmlacademy.ru" aria-label="Сайт html-Академии"><img src="img/logo-htmlacademy.svg" width="80"
+        height="38" alt="Логотип html академии"></a>
     </div>
   </footer>
 </body>
