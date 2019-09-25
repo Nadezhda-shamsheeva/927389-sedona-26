@@ -6,10 +6,15 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="inner-page">
+<body>
+  <div class="inner-wrapper">
   <header class="header">
-    <nav class="main-nav">
-      <a class="header-logo" href="index.html" aria-label="Логотип сайта Седона"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
+    <nav class="inner-nav">
+        <div class="logo">
+            <a class="header-logo" href="index.html" aria-label="Логотип сайта Седона">
+            <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта Седона">
+            </a>
+        </div>
       <ul class="nav-list">
         <li><a href="#" aria-label="Информационный блок">Информация</a></li>
         <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
@@ -20,7 +25,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
-    <section class="top">
+    <section class="inner-top">
       <h2 class="visually-hidden">Параметры для сортировки</h2>
       <form action="https://echo.htmlacademy.ru method="POST">
         <div>
@@ -89,43 +94,43 @@
           <a href="#" aria-label="Сортировка гостиниц по рейтингу">По рейтингу</a>
         </div>
         <div class="arrows">
-          <a href="#" aria-label="Стрелка для продвижения вверх по списку"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Изображение стрелки вверх"></a>
-          <a href="#" aria-label="Стрелка для продвижения вниз по списку"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Изображение стрелки вниз"></a>
+          <a class="arrow-up" href="#" aria-label="Стрелка для продвижения вверх по списку"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Изображение стрелки вверх"></a>
+          <a class="arrow-down" href="#" aria-label="Стрелка для продвижения вниз по списку"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Изображение стрелки вниз"></a>
         </div>
       </div>
       <ul class="sample">
         <li>
           <figure>
-            <a href="#" aria-label="Фото и видео гостиниц Седоны"><img src="img/hotel-picture-1.jpg" width="200" height="140" alt="Изображение гостиницы"></a>
+            <a href="#" aria-label="Фото и видео гостиниц Седоны"><img src="img/hotel-picture-1.jpg" width="130" height="85" alt="Изображение гостиницы"></a>
           </figure>
           <h2>Amara Resort & Spa</h2>
           <h3>Гостиница</h3>
           <p>от 4000 р</p>
-          <p class="four"></p>
+          <p class="four-stars"></p>
           <p>Рейтинг: 8,5</p>
           <a href="#" aria-label="Дополнительная информация о гостинице">Подробнее</a>
           <a href="#" aria-label="Бронирование гостиницы в Седоне">Забронировать</a>
         </li>
         <li>
           <figure>
-            <a href="#" aria-label="Фото и видео мотелей Седоны"><img src="img/hotel-picture-2.jpg" width="200" height="140" alt="Изображение мотеля"></a>
+            <a href="#" aria-label="Фото и видео мотелей Седоны"><img src="img/hotel-picture-2.jpg" width="130" height="85" alt="Изображение мотеля"></a>
           </figure>
           <h2>Desert Quail Inn</h2>
           <h3>Мотель</h3>
           <p>от 3000 р</p>
-          <p class="three"></p>
+          <p class="three-stars"></p>
           <p>Рейтинг: 8,9</p>
           <a href="#" aria-label="Дополнительная информация о мотеле">Подробнее</a>
           <a href="#" aria-label="Бронирование мотеля в Седоне">Забронировать</a>
         </li>
         <li>
           <figure>
-            <a href="#" aria-label="Фото и видео апартаментов Седоны"><img src="img/hotel-picture-3.jpg" width="200" height="140" alt="Изображение апартаментов"></a>
+            <a href="#" aria-label="Фото и видео апартаментов Седоны"><img src="img/hotel-picture-3.jpg" width="130" height="85" alt="Изображение апартаментов"></a>
           </figure>
           <h2>Villas at Poco Diablo</h2>
           <h3>Апартаменты</h3>
           <p>от 2000 р</p>
-          <p class="two"></p>
+          <p class="two-stars"></p>
           <p>Рейтинг: 8,5</p>
           <a href="#" aria-label="Дополнительная информация об апартаментах">Подробнее</a>
           <a href="#" aria-label="Бронирование апартаментов в Седоне">Забронировать</a>
@@ -164,5 +169,6 @@
         height="38" alt="Логотип html академии"></a>
     </div>
   </footer>
+</div>
 </body>
 </html>

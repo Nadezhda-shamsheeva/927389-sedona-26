@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-html, 
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
@@ -21,7 +20,10 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto:
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    box-shadow: 
+    1px 0 10px rgba(0,0,0,0.1),
+    -1px 0 10px rgba(0,0,0,0.1);
 }
 
 .visually-hidden {
@@ -32,12 +34,25 @@ a {
     text-decoration: none;
 }
 
+.main-nav {
+    background-color: #ffffff;
+}
+/*
+.logo {
+    position: absolute;
+    display: block;
+    width: 138px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
 .nav-list {
     list-style: none;
 }
 
 .nav-list li a {
-    background-color: #ffffff;
     font-weight: 700;
     color: #000000;
 }
@@ -198,10 +213,10 @@ h2 {
     background-color: #5496bd;
     color: #88b6d1;
 }
-
+/*
 footer {
     background-color: #ffffff;
-}
+}*/
 
 .sotial-icon{
 	display: flex;
@@ -243,17 +258,26 @@ footer {
     line-height: 18px;
     font-weight: 400;
 }
+/*Внутренняя страница*/
 
-.inner-page {
+.inner-wrapper {
     max-width: 1200px;
     margin: 0 auto:
     background-color: #fefefe;
+    box-shadow:
+    1px 0 10px rgba(0,0,0,0.1),
+    -1px 0 10px rgba(0,0,0,0.1); 
 }
 
+.inner-top {
+    height: 215px; 
+    background-image: url(/img/hotels-fon.jpg);
+    background-repeat: no-repeat;
+}
 
-.top p,
-.top label,
-.top input {
+.inner-top p,
+.inner-top label,
+.inner-top input {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -289,6 +313,10 @@ footer {
 .menu a:first-of-type {
     color: #81b3d2;
     border-bottom: none;
+}
+
+.arrow-up img {
+    opacity: 0.5;
 }
 
 .sample h2:hover {
@@ -345,23 +373,23 @@ footer {
     background-color: #503e33;
 }
 
-.four,
-.three,
-.two {
+.four-stars,
+.three-stars,
+.two-stars {
     height: 18px;
     background-image: url("/img/star.svg");
     background-repeat: repeat;
 }
 
-.four {
+.four-stars {
     width: 74px;
 }
 
-.three {
+.three-stars {
     width: 56px;
 }
 
-.two {
+.two-stars {
     width: 37px;
 }
 
