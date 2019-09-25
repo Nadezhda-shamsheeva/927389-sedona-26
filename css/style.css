@@ -203,6 +203,35 @@ footer {
     background-color: #ffffff;
 }
 
+.sotial-icon{
+	display: flex;
+}
+.icon-item{
+	list-style: none;
+}
+.icon-link{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+	margin:0px 3px;	
+}
+
+
+.icon-link:hover{
+	background-color: #669ec0;
+ }
+ .icon-link:active,
+ .icon-link:focus{
+	background-color: #5496bd;
+ }
+ /*
+ .icon-link:active img{
+	opacity:0.8
+ }*/
+
 .visits a {
     font-size: 15px;
     line-height: 30px;
