@@ -27,7 +27,7 @@
     <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
     <section class="inner-top">
       <h2 class="visually-hidden">Параметры для сортировки</h2>
-      <form action="https://echo.htmlacademy.ru method="POST">
+      <form class="inner-check" action="https://echo.htmlacademy.ru method="POST">
         <div>
           <p>Инфраструктура:</p>
           <label>
@@ -58,9 +58,9 @@
             Апартаменты
           </label>
         </div>
-        <div>
+        <div class="cost">
           <p>Стоимость в сутки (Р):</p>
-          <ul>
+          <ul class="cost-list">
             <li>
                   <label class="visually-hidden" for="start-field">Ввод минимальной стоимости</label>
                   <input id="start-field" type="text" name="start" placeholder="от 0">
@@ -75,7 +75,7 @@
             </li>
           </ul>
         </div>
-        <button class="inner-.button" type="submit">Показать</button>
+        <button class="inner-button" type="submit">Показать</button>
       </form>
     </section>
     <section>

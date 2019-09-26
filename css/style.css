@@ -200,7 +200,7 @@ h2 {
 
 .form-search input[type="text"]:focus {
     background-color: #ffffff;
-    border: 5px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
 }
 .button {
     background-color: #81b3d2;
@@ -275,12 +275,25 @@ footer {
     background-repeat: no-repeat;
 }
 
-.inner-top p,
-.inner-top label,
-.inner-top input {
+.inner-check p,
+.inner-check label,
+.inner-check input[type="checkbox"],
+.inner-button,
+.cost-list li input {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
+    color:#ffffff;
+}
+
+.cost-list li input,
+.inner-button {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+
+.inner-button:hover {
+    background-color: #ffffff;
     color: #000000;
 }
 
