@@ -35,15 +35,11 @@ a {
 }
 
 .header {
-    min-height: 57px;
+    min-height: 56px;
 }
 
 .main-nav {
     background-color: #ffffff;
-
-    min-height: 57px;
-   /* display: flex;
-    flex-direction: column;*/
 }
 
 .logo {
@@ -56,23 +52,25 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.logo {
-    position: absolute;
-    display: block;
-    width: 138px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 
 .nav-list {
     list-style: none;
-    min-height: 57px;
+    min-height: 56px;
     display: flex;
-    justify-content: space-around;
+   flex-direction: row;
+   justify-content: space-between;
+  
+    width: 1054px;
 }
+
+.nav-list li {
+    min-height: 56px;
+    width: 240px;
+    align-items: center;
+    background-color: #7f6d62;
+}
+
+
 
 .nav-list li a {
     font-weight: 700;
