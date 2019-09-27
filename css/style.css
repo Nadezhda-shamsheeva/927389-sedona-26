@@ -19,7 +19,7 @@ img {
 
 .wrapper {
     max-width: 1200px;
-    margin: 0 auto:
+    margin: 0 auto;
     background-color: #ffffff; 
     box-shadow: 
     1px 0 10px rgba(0,0,0,0.1),
@@ -40,6 +40,9 @@ a {
 
 .main-nav {
     background-color: #ffffff;
+
+    position: relative;
+    height: 56px;
 }
 
 .logo {
@@ -54,27 +57,32 @@ a {
 }
 
 .nav-list {
-    list-style: none;
     min-height: 56px;
+    padding: 0 73px;
     display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-  
-    width: 1054px;
+    flex-wrap: nowrap;
 }
 
 .nav-list li {
+    list-style: none;
     min-height: 56px;
     width: 240px;
-    align-items: center;
-    background-color: #7f6d62;
+   text-align: left;
 }
 
+.nav-list li:nth-child(3) {
+    margin-left: auto;
+}
 
+.nav-list li:nth-child(3),
+.nav-list li:last-child {
+    text-align: right;
+}
 
 .nav-list li a {
     font-weight: 700;
     color: #000000;
+    line-height: 56px;
 }
 
 .nav-list a:hover,
@@ -95,7 +103,7 @@ a {
 
     background-color: #81b3d2;
     background-image: 
-    url("/img/top_bg2.jpg");
+    url("../img/top_bg2.jpg");
     background-size: cover;
 }
 
@@ -161,7 +169,7 @@ h2 {
 }
 
 .favour {
-    background-image: url('/img/map.png');
+    background-image: url('../img/map.png');
     background-repeat: no-repeat;
 }
 
@@ -282,7 +290,7 @@ footer {
 
 .inner-wrapper {
     max-width: 1200px;
-    margin: 0 auto:
+    margin: 0 auto;
     background-color: #fefefe;
     box-shadow:
     1px 0 10px rgba(0,0,0,0.1),
@@ -291,7 +299,7 @@ footer {
 
 .inner-top {
     height: 215px; 
-    background-image: url(/img/hotels-fon.jpg);
+    background-image: url("../img/hotels-fon.jpg");
     background-repeat: no-repeat;
 }
 
@@ -410,7 +418,7 @@ footer {
 .three-stars,
 .two-stars {
     height: 18px;
-    background-image: url("/img/star.svg");
+    background-image: url("../img/star.svg");
     background-repeat: repeat;
 }
 
