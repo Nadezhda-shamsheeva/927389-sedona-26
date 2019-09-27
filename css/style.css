@@ -54,6 +54,7 @@ a {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 10;
 }
 
 .nav-list {
@@ -105,6 +106,22 @@ a {
     background-image: 
     url("../img/top_bg2.jpg");
     background-size: cover;
+
+    position: relative;
+}
+
+.welcome img {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.capture {
+    height: 214px;
+    text-align: center;
 }
 
 h2 {
@@ -120,10 +137,42 @@ h2 {
     color: #696969;
 }
 
+.wrapper-reason-one {
+    width: 400px;
+    height: 255px;
+}
+
+.reason-one,
+.reason-two,
+.reason-else {
+    display: flex;
+    width: 1200;
+    height: 255px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+.reason-two {
+    order: 2;
+}
+
+.reason-else {
+    order: 3;
+}
+
 .reason-one,
 .reason-two {
     background-color: #81b3d2;
+    height: 255px;
+    width: 400px;
 }
+
+.figure {
+    height: 255px;
+    width: 800px;
+}
+
 .reason-one p,
 .reason-two p,
 .reason-else p {
@@ -142,6 +191,15 @@ h2 {
 
 .extra {
     background-color: #ffffff;
+    height: 332px;
+    width: 1200px;
+    display: flex;
+    order: 1;
+}
+
+.extra li,
+.reason-else {
+    width: 400px;
 }
 
 .extra p {
