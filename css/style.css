@@ -140,6 +140,13 @@ h2 {
 .wrapper-reason-one {
     width: 400px;
     height: 255px;
+    display: block;
+}
+
+.reasons {
+    height: 1097px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .reason-one,
@@ -148,8 +155,8 @@ h2 {
     display: flex;
     width: 1200;
     height: 255px;
-    flex-wrap: nowrap;
-    flex-direction: column;
+   /* flex-wrap: nowrap;*/
+   /* flex-direction: column;*/
 }
 
 
@@ -158,6 +165,7 @@ h2 {
 }
 
 .reason-else {
+    flex-direction: column;
     order: 3;
 }
 
