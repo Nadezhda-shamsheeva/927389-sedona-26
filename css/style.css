@@ -137,48 +137,34 @@ h2 {
     color: #696969;
 }
 
-.wrapper-reason-one {
+.reason-one,
+.reason-two {
+    display: flex;
+}
+
+.reason-two {
+    flex-direction: row-reverse;
+}
+
+.reason-one li,
+.reason-two li,
+.reason-else li {
+    list-style: none;
+    height: 255px;
     width: 400px;
-    height: 255px;
-    display: block;
+    margin: auto;
 }
 
-.reasons {
-    height: 1097px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.reason-one,
-.reason-two,
-.reason-else {
-    display: flex;
-    width: 1200;
-    height: 255px;
-   /* flex-wrap: nowrap;*/
-   /* flex-direction: column;*/
-}
-
-
-.reason-two {
-    order: 2;
-}
-
-.reason-else {
-    flex-direction: column;
-    order: 3;
-}
-
-.reason-one,
-.reason-two {
+.reason-one li:first-child,
+.reason-two li:first-child {
     background-color: #81b3d2;
-    height: 255px;
     width: 400px;
+    flex-grow: 0;
 }
 
-.figure {
-    height: 255px;
-    width: 800px;
+.reason-one li:last-child,
+.reason-two li:last-child {
+    flex-grow: 1;
 }
 
 .reason-one p,
@@ -188,6 +174,7 @@ h2 {
     line-height: 20px;
     font-weight: 400px;
     color: #ffffff;
+    text-align: center;
 }
 
 .reason-one p:first-child,
@@ -199,15 +186,14 @@ h2 {
 
 .extra {
     background-color: #ffffff;
-    height: 332px;
-    width: 1200px;
     display: flex;
-    order: 1;
+    margin: auto;
 }
 
-.extra li,
-.reason-else {
+.extra li {
+    list-style: none;
     width: 400px;
+    height: 332px;
 }
 
 .extra p {
@@ -215,6 +201,8 @@ h2 {
     line-height: 20px;
     font-weight: 400;
     color: #696969;
+    text-align: center;
+    padding: 10px;
 }
 
 
@@ -226,8 +214,14 @@ h2 {
     color: #000000;
 }
 
-.reason-else {
+.reason-else  {
     background-color: #eeeeee;
+    display: flex;
+    align-content: space-between;
+}
+
+.reason-else li {
+    width: 400px;
 }
 
 .reason-else p {
@@ -244,6 +238,7 @@ h2 {
     font-size: 22px;
     line-height: 40px;
     font-weight: 700px;
+    text-align: center;
 }
 
 .favour p:nth-child(3) {
@@ -251,6 +246,7 @@ h2 {
    line-height: 24px;
    font-weight: 400;
    color: #696969;
+   text-align: center;
 }
 
 .form-search {
