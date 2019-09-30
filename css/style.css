@@ -229,8 +229,17 @@ h2 {
 }
 
 .favour {
+    min-height: 763px;
     background-image: url('../img/map.png');
     background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top: auto;
+    position: relative;
+}
+
+.interested {
+    min-height: 293px;
+    background-color: #ffffff;
 }
 
 .favour p:nth-child(2),
@@ -252,15 +261,22 @@ h2 {
 .form-search {
     background-color: #ffffff;
     width: 576px;
+    position: absolute;
+    top: 207px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-search h3,
 .button {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 86px;
     font-weight: 700;
     color: #ffffff;
     background-color: #766357;
+    text-align: center;
 }
 
 .form-search h3:hover {
@@ -295,7 +311,12 @@ h2 {
 }
 .button {
     background-color: #81b3d2;
+    height: 58px;
+    width: 456px;
+    margin: 55px;
+    line-height: 58px;
 }
+
 .button:hover {
     background-color: #669ec0;
 }
@@ -304,13 +325,27 @@ h2 {
     background-color: #5496bd;
     color: #88b6d1;
 }
-/*
+
 footer {
     background-color: #ffffff;
-}*/
+    min-height: 120px;
+    display: flex;
+    padding: 0 73px;
+    justify-content: space-between;
+    align-content: center;
+}
 
-.sotial-icon{
-	display: flex;
+.visits,
+.footer-logo {
+    width: 240px;
+    text-align: center;
+}
+
+.social-icon{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .icon-item{
 	list-style: none;
@@ -333,21 +368,24 @@ footer {
  .icon-link:focus{
 	background-color: #5496bd;
  }
- /*
- .icon-link:active img{
-	opacity:0.8
- }*/
+ 
 
 .visits a {
     font-size: 15px;
     line-height: 30px;
     color: #000000;
 }
+.footer-logo {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
 
 .footer-logo p {
     font-size: 10px;
     line-height: 18px;
     font-weight: 400;
+    padding-right: 8px;
 }
 /*Внутренняя страница*/
 
