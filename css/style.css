@@ -122,6 +122,9 @@ a {
 .capture {
     height: 214px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h2 {
@@ -153,6 +156,9 @@ h2 {
     height: 255px;
     width: 400px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .reason-one li:first-child,
@@ -175,6 +181,7 @@ h2 {
     font-weight: 400px;
     color: #ffffff;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .reason-one p:first-child,
@@ -187,6 +194,8 @@ h2 {
 .extra {
     background-color: #ffffff;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
 }
 
@@ -194,6 +203,9 @@ h2 {
     list-style: none;
     width: 400px;
     height: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .extra p {
@@ -220,10 +232,6 @@ h2 {
     align-content: space-between;
 }
 
-.reason-else li {
-    width: 400px;
-}
-
 .reason-else p {
     color: #656565;
 }
@@ -240,6 +248,11 @@ h2 {
 .interested {
     min-height: 293px;
     background-color: #ffffff;
+}
+
+.interested p:first-of-type {
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .favour p:nth-child(2),
@@ -260,7 +273,7 @@ h2 {
 
 .form-search {
     background-color: #ffffff;
-    width: 576px;
+    width: 568px;
     position: absolute;
     top: 207px;
     left: 0;
@@ -288,8 +301,28 @@ h2 {
     background-color: #503e33;
 }
 
+.form-search p {
+    min-width: 458px;
+    margin-left: 55px;
+    margin-bottom: 30px;
+    margin-right: 55px;
+}
+
+.width-small {
+    display: inline;
+}
+
+.form-search p:first-of-type {
+    margin-top: 55px;
+}
+
+.form-search label {
+    position: relative;
+    left: 0;
+}
+
 .form-search label,
-.form-search input[type="text"]  {
+.form-search input[type="text"] {
     font-size: 12px;
     line-height: 20px;
     font-weight: 700;
@@ -299,6 +332,26 @@ h2 {
 
 .form-search input[type="text"] {
     background-color: #f2f2f2;
+    height: 38px;
+    position: relative;
+    right: 0;
+}
+
+.large {
+    width: 346px;
+    position: relative;
+    right: 55px;
+}
+
+.small {
+    width: 114px;
+    margin-right: 0;
+}
+
+
+.calendar {
+    position: absolute;
+    right: 80px;
 }
 
 .form-search input[type="text"]:hover {
@@ -313,7 +366,9 @@ h2 {
     background-color: #81b3d2;
     height: 58px;
     width: 456px;
-    margin: 55px;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 25px;
     line-height: 58px;
 }
 
@@ -327,7 +382,6 @@ h2 {
 }
 
 footer {
-    background-color: #ffffff;
     min-height: 120px;
     display: flex;
     padding: 0 73px;
@@ -341,38 +395,33 @@ footer {
     text-align: center;
 }
 
-.social-icon{
+.social-icon {
     width: 150px;
     display: flex;
     justify-content: space-between;
     
 }
-.icon-item{
-	list-style: none;
+.icon-item {
+    list-style: none;
 }
-.icon-link{
-	display: flex;
-    justify-content: center;
-    align-items: center;
+
+.icon-link {
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-	margin:0px 3px;	
 }
 
-
-.icon-link:hover{
+.icon-link:hover {
 	background-color: #669ec0;
  }
  .icon-link:active,
- .icon-link:focus{
+ .icon-link:focus {
 	background-color: #5496bd;
  }
  
-
 .visits a {
     font-size: 15px;
-    line-height: 30px;
+    line-height: 120px;
     color: #000000;
 }
 .footer-logo {
@@ -383,9 +432,13 @@ footer {
 
 .footer-logo p {
     font-size: 10px;
-    line-height: 18px;
+    line-height: 120px;
     font-weight: 400;
-    padding-right: 8px;
+    padding-right: 6px;
+}
+
+.footer-logo a {
+    padding-top: 40px;
 }
 /*Внутренняя страница*/
 
