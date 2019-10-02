@@ -238,150 +238,116 @@ h2 {
 
 .favour {
     min-height: 763px;
-    background-image: url('../img/map.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    margin-top: auto;
-    position: relative;
 }
 
-.interested {
+.favour-title {
     min-height: 293px;
     background-color: #ffffff;
 }
 
-.interested p:first-of-type {
+.favour-title p:first-of-type {
     padding-top: 50px;
     padding-bottom: 25px;
 }
 
-.favour p:nth-child(2),
-.result {
+.favour-title p:nth-child(2) {
     font-size: 24px;
     line-height: 40px;
     font-weight: 700px;
     text-align: center;
 }
 
-.favour p:nth-child(3) {
+.favour-title p:nth-child(3) {
    font-size: 14px;
    line-height: 24px;
    font-weight: 400;
    color: #696969;
    text-align: center;
 }
+/*Форма*/
+.map {
+    position: relative;
+}
 
 .form-search {
     background-color: #ffffff;
     width: 572px;
+    height: 395px;
     position: absolute;
-    top: 207px;
+    top: -86px;
+    padding-top: 86px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-.form-search h3,
-.button {
-    font-size: 18px;
+.form-search h3 {
+    font-size: 21px;
     line-height: 86px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #766357;
     text-align: center;
 }
 
-.form-search h3:hover {
+.form-search .form-title {
+    background-color: #766357;
+    margin-top: -86px;
+}
+
+.form-search .form-title:hover {
     background-color: #604e43;
+    cursor: pointer;
+}
+
+.form-search .form-title:active {
+    background-color: #503e33;
 }
 
 .form-search h3:active {
     color: #857871;
-    background-color: #503e33;
 }
 
-.form-search p {
-    min-width: 458px;
-    margin-left: 55px;
+.form-body {
+    padding: 55px;
+}
+
+.fields-large {
+    position: relative;
     margin-bottom: 30px;
-    margin-right: 55px;
+    clear: both;
+    text-align: right;
 }
 
-.width-small {
-    display: inline;
+.fields-large label {
+    float: left;
+    line-height: 30px;
 }
 
-.form-search p:first-of-type {
-    margin-top: 55px;
-}
-
-.form-search label {
-    position: relative;
-    left: 0;
-}
-
-.form-search label,
-.form-search input[type="text"] {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.form-search input[type="text"] {
+.form-body input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-sizing: border-box;
     background-color: #f2f2f2;
-    height: 38px;
-    position: relative;
-    right: 0;
+    line-height: 26px;
+    border: none;
 }
 
-.large {
-    width: 346px;
-    position: relative;
-    right: 55px;
+.form-body input[name="arrivaldate"],
+.form-body input[name="departuredate"] {
+    width: 345px;
+    padding-left: 12px;
 }
-
-.small {
-    width: 114px;
-    margin-right: 0;
-}
-
 
 .calendar {
     position: absolute;
-    right: 80px;
-}
-
-.form-search input[type="text"]:hover {
-    background-color: #ebebeb;
-}
-
-.form-search input[type="text"]:focus {
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-}
-.button {
-    background-color: #81b3d2;
-    height: 58px;
-    width: 456px;
-    margin: 0 auto;
-    margin-top: 55px;
-    margin-bottom: 25px;
-    line-height: 58px;
-}
-
-.button:hover {
-    background-color: #669ec0;
-}
-
-.button:active {
-    background-color: #5496bd;
-    color: #88b6d1;
-}
-
-.calendar {
+    display: block;
+    padding-top: 9px;
+    right: 10px;
+    width: 21px;
+    height: 22px;
+    background-color: transparent;
+    background-repeat: no-repeat;
     opacity: 0.3;
     fill: #d7d7d7;
 }
@@ -394,6 +360,83 @@ h2 {
 .calendar:active svg {
     opacity: 1;
     fill: #81b3d2;
+}
+
+.fields-small {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.fields-small label {
+    float: left;
+}
+
+.fields-small label[for=children] {
+    margin-left: 52px;
+}
+
+.fields-small input {
+    float: left;
+    width: 114px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fields-small div {
+    float: right;
+}
+
+.fields-small .btn {
+    float: left;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #a9a9a9;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fields-small .btn:hover {
+    color: #000000;
+    background-color: #ebebeb;
+}
+
+.fields-small .btn:focus {
+    outline: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.fields-small .btn:active {
+    color: #81b3d2;
+}
+
+.form-body input[type=submit] {
+    width: 100%;
+    margin: 55px 0 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #81b3d2;
+    text-align: center;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.form-body input[type=submit]:hover {
+    background-color: #669ec0;
+    cursor: pointer;
+}
+
+.form-body input[type=submit]:active,
+.form-body input[type=submit]:focus {
+    background-color: #5496bd;
+    color: #88b6d1;
 }
 
 footer {
