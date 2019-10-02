@@ -128,13 +128,13 @@ a {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 700;
 }
 
 .content h3 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 400px;
     color: #696969;
@@ -257,14 +257,14 @@ h2 {
 
 .favour p:nth-child(2),
 .result {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 40px;
     font-weight: 700px;
     text-align: center;
 }
 
 .favour p:nth-child(3) {
-   font-size: 12px;
+   font-size: 14px;
    line-height: 24px;
    font-weight: 400;
    color: #696969;
@@ -273,7 +273,7 @@ h2 {
 
 .form-search {
     background-color: #ffffff;
-    width: 568px;
+    width: 572px;
     position: absolute;
     top: 207px;
     left: 0;
@@ -379,6 +379,21 @@ h2 {
 .button:active {
     background-color: #5496bd;
     color: #88b6d1;
+}
+
+.calendar {
+    opacity: 0.3;
+    fill: #d7d7d7;
+}
+
+.calendar:hover {
+    opacity: 1;
+    fill: #000000;
+}
+
+.calendar:active svg {
+    opacity: 1;
+    fill: #81b3d2;
 }
 
 footer {
