@@ -319,9 +319,10 @@ h2 {
     text-align: right;
 }
 
-.fields-large label {
+.fields-large label,
+.fields-small label {
     float: left;
-    line-height: 30px;
+    line-height: 38px;
 }
 
 .form-body input {
@@ -329,6 +330,7 @@ h2 {
     padding-bottom: 6px;
     box-sizing: border-box;
     background-color: #f2f2f2;
+    font-size: 14px;
     line-height: 26px;
     border: none;
 }
@@ -342,14 +344,15 @@ h2 {
 .calendar {
     position: absolute;
     display: block;
-    padding-top: 9px;
+    margin-top: -30px;
     right: 10px;
     width: 21px;
     height: 22px;
     background-color: transparent;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 1;
     fill: #d7d7d7;
+    z-index: 20;
 }
 
 .calendar:hover {
@@ -378,7 +381,7 @@ h2 {
 
 .fields-small input {
     float: left;
-    width: 114px;
+    width: 38px;
     text-align: center;
     font-size: 14px;
 }
@@ -455,18 +458,26 @@ footer {
 
 .social-icon {
     width: 150px;
+    height: 48px;
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 36px;
 }
+
 .icon-item {
     list-style: none;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon-link {
-    background-color: #81b3d2;
-    width: 46px;
-    height: 48px;
+    width: 17px;
+    height: 15px;
+    margin: 0 auto;
 }
 
 .icon-link:hover {
@@ -488,16 +499,36 @@ footer {
     align-content: center;
 }
 
-.footer-logo p {
-    font-size: 10px;
-    line-height: 120px;
-    font-weight: 400;
-    padding-right: 6px;
-}
-
 .footer-logo a {
     padding-top: 40px;
 }
+
+.footer-logo svg {
+    width: 115px;
+    height: 39px;
+    fill: #231f20;
+    opacity: 1;
+}
+
+.footer-logo a:hover svg,
+.footer-logo a:focus svg {
+    fill: #81b3d2;
+    opacity: 1;
+}
+
+.logo-link:active svg{
+    fill: #bdbbbc;
+    opacity: 1;
+}
+
+.footer-logo p {
+    font-size: 11px;
+    line-height: 120px;
+    font-weight: 400;
+    padding-right: 10px;
+    color: #444444;
+}
+
 /*Внутренняя страница*/
 
 .inner-wrapper {
