@@ -100,12 +100,10 @@ a {
 
 .welcome {
     height: 510px;
-
     background-color: #81b3d2;
     background-image: 
     url("../img/top_bg2.jpg");
     background-size: cover;
-
     position: relative;
 }
 
@@ -637,8 +635,20 @@ footer {
     width: 95px;
 }
 
-.arrow-up img {
-    opacity: 0.5;
+.arrow-up svg path {
+    fill: #cacaca;
+}
+
+.arrow-up:hover svg path,
+.arrow-up:focus svg path,
+.arrow-down:hover svg path,
+.arrow-down:focus svg path {
+    fill: #231f20;
+}
+
+.arrow-up:active svg path,
+.arrow-down:active svg path {
+    fill: #81b3d2;
 }
 
 .sample-wrapper {
@@ -750,40 +760,30 @@ figure {
 }
 
 .stars {
-    width: 120px;
+    width: 110px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: auto;
 }
 
 .stars p:last-of-type {
-    width: 110px;
     height: 28px;
+    width: 110px;
     background-color: #f2f2f2; 
-    font-size: 18px; 
+    font-size: 12px; 
     line-height: 28px;
     color: #696969;
     text-align: center;
+    margin-left: auto;
 }
 
 .stars p:first-of-type {
-    height: 22px;
-    background-image: url("../img/star.svg");
-    background-repeat: repeat;
+    height: 17px;
+    margin-left: auto;
 }
 
-.four-stars {
-    width: 90px;
-}
 
-.three-stars {
-    width: 65px;
-}
-
-.two-stars {
-    width: 41px;
-}
 
 
 
