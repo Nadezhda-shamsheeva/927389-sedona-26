@@ -40,7 +40,6 @@ a {
 
 .main-nav {
     background-color: #ffffff;
-
     position: relative;
     height: 56px;
 }
@@ -140,12 +139,14 @@ h2 {
     color: #696969;
 }
 
-.reason-one,
-.reason-two {
+.reason-one {
     display: flex;
+    width: 100%;
 }
 
 .reason-two {
+    width: 100%;
+    display: flex;
     flex-direction: row-reverse;
 }
 
@@ -155,22 +156,17 @@ h2 {
     list-style: none;
     height: 255px;
     width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .reason-one li:first-child,
 .reason-two li:first-child {
     background-color: #81b3d2;
     width: 400px;
-    flex-grow: 0;
 }
 
-.reason-one li:last-child,
-.reason-two li:last-child {
-    flex-grow: 1;
+.reason-one figure,
+.reason-two figure {
+    width: 800px;
 }
 
 .reason-one p,
@@ -480,13 +476,18 @@ footer {
     margin: 0 auto;
 }
 
-.icon-link:hover {
+.icon-item:hover,
+.icon-item:focus {
 	background-color: #669ec0;
  }
- .icon-link:active,
- .icon-link:focus {
+ .icon-item:active {
 	background-color: #5496bd;
  }
+
+ a.icon-link:active img {
+     background-color: #88b6d1;
+     opacity: 0.3;
+ } 
  
 .visits a {
     font-size: 15px;
@@ -503,22 +504,22 @@ footer {
     padding-top: 40px;
 }
 
-.footer-logo svg {
+.footer-logo svg  {
     width: 115px;
-    height: 39px;
+    height: 40px;
+}
+
+.footer-logo svg path {
     fill: #231f20;
-    opacity: 1;
 }
 
-.footer-logo a:hover svg,
-.footer-logo a:focus svg {
+.footer-logo a:hover svg path,
+.footer-logo a:focus svg path {
     fill: #81b3d2;
-    opacity: 1;
 }
 
-.logo-link:active svg{
+.logo-link:active svg path{
     fill: #bdbbbc;
-    opacity: 1;
 }
 
 .footer-logo p {
@@ -644,12 +645,18 @@ footer {
     height: 454px;
     padding-left: 73px;
     padding-right: 73px;
+    list-style: none;
 }
 
 .sample-item {
     height: 150px;
+}
+
+.block-item {
+    height: 90px;
     display: flex;
-    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 figure {
@@ -662,22 +669,14 @@ figure {
     min-width: 260px;
 }
 
-.stars {
-    width: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: auto;
-}
-
 .description h2 {
     font-size: 22px;
-    line-height: 87px;
     font-weight: 700;
     color: #000000;
 }
 
-.description h2:hover {
+.description h2:hover,
+.description h2:focus {
    color: #81b3d2;
 }
 
@@ -687,43 +686,75 @@ figure {
 
 .description h3,
 .description p {
-    font-size: 18px;
+    font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     color: #696969;
 }
 
-.description a {
-    font-size: 18px;
-    line-height: 24px;
+.description h3 {
+    width: 118px;
+}
+
+.description p {
+    width: 142px;
+}
+
+.description-item {
+    display: flex;
+   justify-content: end;
+}
+
+.btn-details,
+.btn-reservation {
+    font-size: 12px;
+    line-height: 28px;
     font-weight: 700px;
     color: #ffffff;
-ъ=\апек4к5
+    text-transform: uppercase;
+    text-align: center;
+    height: 28px;
+    border: none;
+}
 
-.description a:first-of-type {
+.btn-details {
     background-color: #81b3d2;
+    width: 110px;
+    margin-right: 8px;
 }
 
-.description a:last-of-type {
+.btn-reservation {
     background-color: #766357;
+    width: 142px;
 }
 
-.description a:first-of-type:hover {
+.btn-details:hover,
+.btn-details:focus {
     background-color: #669ec0;
 }
 
-.description a:last-of-type:hover {
+.btn-reservation:hover,
+.btn-reservation:focus {
     background-color: #604e43;
 }
 
-.description a:first-of-type:active {
+.btn-details:active {
     color: #88b6d1;
     background-color: #5496bd;
 }
 
-.description a:last-of-type:active {
+
+.btn-reservation:active {
     color: #81746d;
     background-color: #503e33;
+}
+
+.stars {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
 }
 
 .stars p:last-of-type {
