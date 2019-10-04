@@ -27,7 +27,8 @@ img {
 }
 
 .visually-hidden {
-    display: none;
+    visibility: hidden;
+    position: absolute;
 }
 
 a {
@@ -115,23 +116,36 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+/*
+.welcome::before {
+    content:"";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+}*/
 
 .capture {
     height: 214px;
     text-align: center;
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .content h3 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     font-weight: 400px;
     color: #696969;
@@ -245,14 +259,14 @@ h2 {
 }
 
 .favour-title p:nth-child(2) {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 40px;
     font-weight: 700px;
     text-align: center;
 }
 
 .favour-title p:nth-child(3) {
-   font-size: 14px;
+   font-size: 12px;
    line-height: 24px;
    font-weight: 400;
    color: #696969;
