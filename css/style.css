@@ -29,6 +29,7 @@ img {
 .visually-hidden {
     visibility: hidden;
     position: absolute;
+    display: none;
 }
 
 a {
@@ -86,13 +87,13 @@ a {
     line-height: 56px;
 }
 
+.nav-list a:visited {
+    color: #7f6d62;
+}
+
 .nav-list a:hover,
 .nav-list a:focus {
     color: #81b3d2;
-}
-
-.nav-list a:visited {
-    color: #7f6d62;
 }
 
 .nav-list a:active {
@@ -196,12 +197,9 @@ h2 {
     padding-top: 3px;
 }
 
-
 .reason-two p:first-of-type { 
    padding-bottom: 20px;
 }
-
-
 
 .extra {
     background-color: #ffffff;
@@ -233,7 +231,6 @@ h2 {
     text-align: center;
     padding-bottom: 22px;
 }
-
 
 .extra li p:nth-child(2),
 .reason-else p:first-child {
@@ -548,7 +545,6 @@ footer {
      opacity: 0.3;
  } 
  
-
 .footer-logo {
     display: flex;
     justify-content: end;
@@ -597,10 +593,37 @@ footer {
     -1px 0 10px rgba(0,0,0,0.1); 
 }
 
+.inner-nav {
+    background-color: #fefefe;
+    position: relative;
+    height: 56px;
+}
+
 .inner-top {
     height: 215px; 
+    margin-left: 73px;
+    margin-right: 73px;
     background-image: url("../img/hotels-fon.jpg");
     background-repeat: no-repeat;
+    background-position: 0;
+    z-index: 5;
+}
+
+.inner-check {
+    position: relative;
+    height: 215px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.top-block {
+    width: 600px;
+    display: flex;
+}
+
+.infra,
+.type-housing {
+    width: 200px;
 }
 
 .inner-check p,
@@ -737,18 +760,25 @@ figure {
     min-width: 260px;
 }
 
-.description h2 {
+.description-item {
+    display: flex;
+   justify-content: end;
+   padding: 6px 0;
+}
+
+.title-hotel {
     font-size: 22px;
     font-weight: 700;
     color: #000000;
+    padding: 0;
 }
 
-.description h2:hover,
-.description h2:focus {
+.title-hotel:hover,
+.title-hotel:focus {
    color: #81b3d2;
 }
 
-.description h2:active {
+.title-hotel:active {
     color: #b2b2b2;
 }
 
@@ -766,11 +796,6 @@ figure {
 
 .description p {
     width: 142px;
-}
-
-.description-item {
-    display: flex;
-   justify-content: end;
 }
 
 .btn-details,
