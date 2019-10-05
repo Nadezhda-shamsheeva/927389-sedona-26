@@ -131,15 +131,12 @@ a {
 .capture {
     height: 214px;
     text-align: center;
-   /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;*/
 }
 
 h2 {
     font-size: 19px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
     padding-top: 60px;
     padding-bottom: 30px;
 }
@@ -162,23 +159,23 @@ h2 {
     flex-direction: row-reverse;
 }
 
-.reason-one li,
-.reason-two li,
-.reason-else li {
+.reason-one .text-block,
+.reason-two .text-block {
     list-style: none;
     height: 255px;
     width: 400px;
+    background-color: #81b3d2;
 }
 
-.reason-one li:first-child,
-.reason-two li:first-child {
-    background-color: #81b3d2;
-    width: 400px;
+.text-wrapper {
+    padding: 45px 0 65px 0;
+    
 }
 
 .reason-one figure,
 .reason-two figure {
     width: 800px;
+   margin-right: auto;
 }
 
 .reason-one p,
@@ -189,14 +186,19 @@ h2 {
     font-weight: 400px;
     color: #ffffff;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
-.reason-one p:first-child,
-.reason-two p:first-child { 
-    font-size: 18px;
+.reason-one p:first-of-type,
+.reason-two p:first-of-type { 
+    font-size: 19px;
     line-height: 24px;
     font-weight: 700;
+}
+
+
+.reason-two p { 
+   padding-bottom: 20px;
 }
 
 .extra {
@@ -238,6 +240,12 @@ h2 {
     background-color: #eeeeee;
     display: flex;
     align-content: space-between;
+}
+
+.reason-else li {
+    list-style: none;
+    height: 255px;
+    width: 400px;
 }
 
 .reason-else p {
