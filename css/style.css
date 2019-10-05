@@ -138,7 +138,7 @@ h2 {
     line-height: 24px;
     font-weight: 700;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 }
 
 .content h3 {
@@ -168,7 +168,7 @@ h2 {
 }
 
 .text-wrapper {
-    padding: 45px 0 65px 0;
+    padding: 42px 0 60px 0;
     
 }
 
@@ -179,8 +179,7 @@ h2 {
 }
 
 .reason-one p,
-.reason-two p,
-.reason-else p {
+.reason-two p {
     font-size: 12px;
     line-height: 20px;
     font-weight: 400px;
@@ -194,12 +193,15 @@ h2 {
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
+    padding-top: 3px;
 }
 
 
-.reason-two p { 
+.reason-two p:first-of-type { 
    padding-bottom: 20px;
 }
+
+
 
 .extra {
     background-color: #ffffff;
@@ -212,7 +214,12 @@ h2 {
 .extra li {
     list-style: none;
     width: 400px;
-    height: 332px;
+    height: 330px;
+    
+}
+
+.extra-content {
+    padding: 60px 0 55px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,14 +231,14 @@ h2 {
     font-weight: 400;
     color: #696969;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 22px;
 }
 
 
 .extra li p:nth-child(2),
 .reason-else p:first-child {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 700;
     color: #000000;
 }
@@ -248,8 +255,24 @@ h2 {
     width: 400px;
 }
 
+.text-else {
+    padding: 50px 0 85px 0;
+}
+
 .reason-else p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400px;
+    text-align: center;
+    padding-bottom: 22px;
     color: #656565;
+}
+
+.reason-else p:first-of-type {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .favour {
@@ -262,8 +285,8 @@ h2 {
 }
 
 .favour-title p:first-of-type {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-top: 52px;
+    padding-bottom: 23px;
 }
 
 .favour-title p:nth-child(2) {
@@ -299,7 +322,7 @@ h2 {
 }
 
 .form-search h3 {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 86px;
     font-weight: 700;
     color: #ffffff;
@@ -338,16 +361,23 @@ h2 {
 .fields-large label,
 .fields-small label {
     float: left;
+    font-size: 12px;
     line-height: 38px;
 }
 
+.fields-large label {
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
 .form-body input {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 4px;
     box-sizing: border-box;
     background-color: #f2f2f2;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 26px;
+    text-transform: uppercase;
     border: none;
 }
 
@@ -470,6 +500,15 @@ footer {
 .footer-logo {
     width: 240px;
     text-align: center;
+    padding-left: 10px;
+}
+
+.visits a {
+    font-size: 18px;
+    line-height: 120px;
+    color: #000000;
+
+   
 }
 
 .social-icon {
@@ -509,11 +548,7 @@ footer {
      opacity: 0.3;
  } 
  
-.visits a {
-    font-size: 15px;
-    line-height: 120px;
-    color: #000000;
-}
+
 .footer-logo {
     display: flex;
     justify-content: end;
@@ -543,10 +578,11 @@ footer {
 }
 
 .footer-logo p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 120px;
     font-weight: 400;
     padding-right: 10px;
+    padding-left: 13px;
     color: #444444;
 }
 
