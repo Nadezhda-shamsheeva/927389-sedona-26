@@ -21,7 +21,7 @@
           <li><a href="#" aria-label="Информационный блок">Информация</a></li>
           <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
           <li><a href="#" aria-label="Карта штата">Карта штата</a></li>
-          <li><a href="#" aria-label="Гостиницы Седоны">Гостиницы</a></li>
+          <li><a class="active" href="#" aria-label="Гостиницы Седоны">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -70,14 +70,16 @@
           <div class="cost">
             <p>Стоимость в сутки (Р):</p>
             <ul class="cost-list">
+              <div class="flex">
               <li>
                 <label class="visually-hidden" for="start-field">Ввод минимальной стоимости</label>
-                <input id="start-field" type="text" name="start" placeholder="от 0">
+                <input class="start-number" id="start-field" type="text" name="start" placeholder="от 0">
               </li>
               <li>
                 <label class="visually-hidden" for="finish-field">Ввод максимальной стоимости</label>
-                <input id="finish-field" type="text" name="finish" placeholder="до 3000">
+                <input class="finish-number" id="finish-field" type="text" name="finish" placeholder="до 3000">
               </li>
+            </div>
               <li>
                 <label class="visually-hidden" for="range-field">"Бегунок" выбора стоимости</label>
                 <input id="range-field" type="range" min="0" value="3000" step="100" max="4000">
@@ -97,7 +99,7 @@
           <div class="menu">
             <p>Сортировка:</p>
             <div class="menu-link">
-              <a href="#" aria-label="Сортировка гостиниц по цене">По цене</a>
+              <a class="active" href="#" aria-label="Сортировка гостиниц по цене">По цене</a>
               <a href="#" aria-label="Сортировка гостиниц по типу">По типу</a>
               <a href="#" aria-label="Сортировка гостиниц по рейтингу">По рейтингу</a>
             </div>
@@ -107,7 +109,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
             </span>
             <span class="arrow-down">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
+                <svg class="active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
              </span>
           </div>
         </div>

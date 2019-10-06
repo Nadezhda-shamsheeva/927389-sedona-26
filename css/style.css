@@ -599,21 +599,24 @@ footer {
     height: 56px;
 }
 
+.inner-nav .active {
+    color: #7f6d62;
+}
+
 .inner-top {
-    height: 215px; 
-    margin-left: 73px;
-    margin-right: 73px;
+    height: 218px; 
+    margin: 0 auto;
+}
+
+.inner-check {
     background-image: url("../img/hotels-fon.jpg");
     background-repeat: no-repeat;
     background-position: 0;
     z-index: 5;
-}
-
-.inner-check {
     position: relative;
-    height: 215px;
     display: flex;
-    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .top-block {
@@ -623,24 +626,77 @@ footer {
 
 .infra,
 .type-housing {
-    width: 200px;
+    width: 240px;
+    padding-left: 73px;
 }
 
-.inner-check p,
-.inner-check label,
-.inner-check input[type="checkbox"],
-.inner-button,
-.cost-list li input {
-    font-size: 18px;
+.infra p,
+.type-housing p,
+.cost p {
+    padding-bottom: 30px;
+    font-size: 13px;
     line-height: 24px;
     font-weight: 700;
     color:#ffffff;
 }
 
-.cost-list li input,
+.inner-check label,
+.inner-check input[type="checkbox"] {
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400;
+    color:#ffffff;
+}
+
+.inner-check label {
+    height: 25px;
+    margin-bottom: 15px;
+  
+}
+
+.inner-check input[type="checkbox"] {
+    width: 24px;
+    height: 25px;
+    margin-right: 17px;
+}
+
+.cost {
+    width: 320px;
+    margin-left: auto;
+    padding-right: 73px;
+    text-align: center;
+}
+
+.cost-list {
+    list-style: none;
+}
+
+.cost-list .flex {
+    display: flex;
+}
+
+
+.start-number,
+.finish-number,
 .inner-button {
+    width: 160px;
+    font-size: 12px;
+    line-height: 38px;
+    font-weight: 400;
+    color:#ffffff;
+    text-transform: uppercase;
+    height: 38px;
     border: 1px solid #ffffff;
     background-color: transparent;
+    text-align: center;
+}
+
+.cost p {
+    padding-bottom: 15px;
+}
+
+.inner-button {
+    width: 138px;
 }
 
 .inner-button:hover {
@@ -665,7 +721,7 @@ footer {
 }
 
 .result p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 87px;
     font-weight: 700;
     color: #000000;
@@ -673,7 +729,6 @@ footer {
 
 .menu {
     min-width: 700px;
-    flex-grow: 1;
     display: flex;
     align-items: center;
 }
@@ -696,7 +751,7 @@ footer {
     border-bottom: 2px dotted #b2b2b2;
 }
 
-.menu-link a:first-of-type {
+.menu-link .active {
     color: #81b3d2;
     border-bottom: none;
 }
@@ -714,6 +769,12 @@ footer {
 
 .arrows {
     width: 95px;
+    margin-right: 25px;
+    margin-left: auto;
+}
+
+.arrows span {
+    padding-left: 12px;
 }
 
 .arrow-up svg path {
@@ -728,7 +789,8 @@ footer {
 }
 
 .arrow-up:active svg path,
-.arrow-down:active svg path {
+.arrow-down:active svg path,
+.arrow-down .active path {
     fill: #81b3d2;
 }
 
