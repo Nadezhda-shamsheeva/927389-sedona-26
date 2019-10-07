@@ -604,19 +604,16 @@ footer {
 }
 
 .inner-top {
-    height: 218px; 
+    height: 215px; 
     margin: 0 auto;
 }
 
 .inner-check {
-    background-image: url("../img/hotels-fon.jpg");
+    height: 215px;
+    background-image: url("../img/top_filter_bg.jpg");
     background-repeat: no-repeat;
-    background-position: 0;
-    z-index: 5;
-    position: relative;
+    background-position: top left;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .top-block {
@@ -626,32 +623,46 @@ footer {
 
 .infra,
 .type-housing {
+    height: 155px;
     width: 240px;
     padding-left: 73px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.block-flex {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .infra p,
 .type-housing p,
 .cost p {
-    padding-bottom: 30px;
+   padding-bottom: 15px;
     font-size: 13px;
     line-height: 24px;
     font-weight: 700;
     color:#ffffff;
 }
 
-.inner-check label,
-.inner-check input[type="checkbox"] {
+.fields-top {
+    height: 12px;
+    width: 240px;
+    position: relative;
+}
+
+.fields-top label {
+    position: absolute;
+    bottom: -12px;
+}
+
+.inner-check label {
     font-size: 12px;
     line-height: 25px;
     font-weight: 400;
     color:#ffffff;
-}
-
-.inner-check label {
-    height: 25px;
-    margin-bottom: 15px;
-  
 }
 
 .inner-check input[type="checkbox"] {
@@ -661,20 +672,27 @@ footer {
 }
 
 .cost {
+    height: 155px;
     width: 320px;
     margin-left: auto;
     padding-right: 73px;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .cost-list {
     list-style: none;
 }
 
-.cost-list .flex {
-    display: flex;
+.cost p {
+    padding-bottom: 5px;
+    text-align: left;
 }
 
+ .flex-cost {
+    display: flex;
+}
 
 .start-number,
 .finish-number,
@@ -691,8 +709,10 @@ footer {
     text-align: center;
 }
 
-.cost p {
-    padding-bottom: 15px;
+.range {
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .inner-button {
@@ -705,7 +725,7 @@ footer {
 }
 
 .inner-content {
-    height: 540px;
+   min-height: 541px;
     width: 100%;
 }
 
