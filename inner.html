@@ -77,16 +77,18 @@
                 <div class="flex-cost">
                   <li>
                     <label class="visually-hidden" for="start-field">Ввод минимальной стоимости</label>
-                    <input class="start-number" id="start-field" type="text" name="start" placeholder="от 0">
+                    <input class="start-number" id="start-field" type="text" name="start" value="" placeholder="от 0">
                   </li>
                   <li>
                     <label class="visually-hidden" for="finish-field">Ввод максимальной стоимости</label>
-                    <input class="finish-number" id="finish-field" type="text" name="finish" placeholder="до 3000">
+                    <input class="finish-number" id="finish-field" type="text" name="finish" value="" placeholder="до 3000">
                   </li>
                 </div>
-                <li class="circle">
+                <li class="range-box">
+                  <div class="circle">
                   <label class="visually-hidden" for="range-field">"Бегунок" выбора стоимости</label>
                   <input class="range" id="range-field" type="range" min="0" value="3000" step="100" max="4000">
+                  </div>
                 </li>
               </ul>
               <button class="inner-button" type="submit">Показать</button>
