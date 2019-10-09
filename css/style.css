@@ -26,10 +26,18 @@ img {
     -1px 0 10px rgba(0,0,0,0.1);
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
     visibility: hidden;
     position: absolute;
-    display: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
 }
 
 a {
