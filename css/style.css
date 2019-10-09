@@ -619,13 +619,15 @@ footer {
 .inner-check {
     height: 215px;
     background-image: url("../img/top_filter_bg.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-color: #dceaf3;
     background-position: top left;
     display: flex;
 }
 
 .top-block {
-    width: 600px;
+    width: 50%;
     display: flex;
 }
 
@@ -648,7 +650,7 @@ footer {
 .infra p,
 .type-housing p,
 .cost p {
-   padding-bottom: 20px;
+   padding-bottom: 0px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -674,10 +676,44 @@ footer {
 }
 
 .inner-check input[type="checkbox"] {
-    width: 24px;
-    height: 25px;
-    margin-right: 17px;
+    display: none;
 }
+
+ .inner-check input[type="checkbox"]+label {
+        position: relative;
+        display: block;
+        margin-left: 40px;
+        padding-top: 9px;
+        padding-bottom: 16px;
+        cursor: pointer;
+    }
+
+  .inner-check input[type="checkbox"]+label::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/checkbox-off.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .inner-check input[type="checkbox"]:checked+label::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -40px;
+        display: block;
+        width: 26px;
+        height: 22px;
+        background-image: url("../img/checkbox-on.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 
 .cost {
     height: 155px;
