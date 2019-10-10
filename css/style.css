@@ -614,12 +614,12 @@ footer {
 }
 
 .inner-top {
-    height: 215px; 
+    height: 218px; 
     margin: 0 auto;
 }
 
 .inner-check {
-    height: 215px;
+    height: 218px;
     background-image: url("../img/top_filter_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -638,12 +638,16 @@ footer {
     height: 155px;
     width: 240px;
     padding-left: 73px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 26px;
+    margin-bottom: 35px;
+}
+
+.type-housing {
+    padding-left: 17px;
 }
 
 .block-flex {
-    height: 94px;
+    height: 113px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -653,26 +657,26 @@ footer {
 .type-housing p,
 .cost p {
    padding-bottom: 0px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color:#ffffff;
 }
 
 .fields-top {
-    height: 12px;
+    height: 22px;
     width: 240px;
     position: relative;
 }
 
 .fields-top label {
     position: absolute;
-    bottom: -12px;
+    top: 17px;
 }
 
 .inner-check label {
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 16px;
     font-weight: 400;
     color:#ffffff;
 }
@@ -723,7 +727,7 @@ footer {
     margin-left: auto;
     padding-right: 73px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 
@@ -733,7 +737,7 @@ footer {
 }
 
 .cost p {
-    padding-bottom: 6px;
+    padding-bottom: 9px;
     text-align: left;
 }
 
@@ -744,8 +748,8 @@ footer {
 .start-number,
 .finish-number,
 .inner-button {
-    width: 158px;
-    font-size: 12px;
+    width: 157px;
+    font-size: 14px;
     line-height: 32px;
     font-weight: 400;
     color:#ffffff;
@@ -762,11 +766,12 @@ footer {
 }
 
 .finish-number {
-    margin-left: -2px;
+    margin-left: -1px;
     border-left-color: transparent;
 }
 
 .start-number {
+    margin-right: -1px;
     border-right-color: transparent;
 }
 
@@ -774,10 +779,10 @@ footer {
     content: "";
     position: absolute;
     width: 2px;
-    height: 24px;
+    height: 22px;
     display: block;
     background-color: #ffffff;
-    top: 6px;
+    top: 7px;
     left: 50%;
 }
 
@@ -803,7 +808,7 @@ footer {
     background-color: #ababab;
     margin-top: 20px;
     margin-left: 10px;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .range {
@@ -851,10 +856,10 @@ footer {
 }
 
 .max-range:hover {
-    width: 8px;
-    height: 8px;
-    top: -16px;
-    border: 16px solid #ffffff;
+    width: 6px;
+    height: 6px;
+    top: -12px;
+    border: 12px solid #ffffff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -865,8 +870,8 @@ footer {
 
 
 .inner-button {
-    width: 136px;
-    height: 32px;
+    width: 138px;
+    height: 36px;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -884,12 +889,12 @@ footer {
 }
 
 .inner-content {
-   min-height: 541px;
+   min-height: 540px;
     width: 100%;
 }
 
 .sorted {
-    height: 87px;
+    height: 86px;
     display: flex;
     align-items: center;
 }
@@ -900,8 +905,8 @@ footer {
 }
 
 .result p {
-    font-size: 20px;
-    line-height: 87px;
+    font-size: 21px;
+    line-height: 25px;
     font-weight: 700;
     color: #000000;
 }
@@ -909,25 +914,27 @@ footer {
 .menu {
     min-width: 700px;
     display: flex;
-    align-items: center;
+    margin-top: 5px;
 }
 
 .menu p {
     width: 115px;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 14px;
     font-weight: 400;
 }
 
 .menu-link {
-    width: 240px;
+    width: 400px;
     display: flex;
-    justify-content: space-between;
 }
+
 .menu-link a {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #b2b2b2;
-    border-bottom: 2px dotted #b2b2b2;
+    border-bottom: 1px dotted #b2b2b2;
+    margin-right: 35px;
 }
 
 .menu-link .active {
@@ -953,7 +960,7 @@ footer {
 }
 
 .arrows span {
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
 .arrow-up svg path {
@@ -974,21 +981,20 @@ footer {
 }
 
 .sample-wrapper {
-    height: 454px;
     padding-left: 73px;
     padding-right: 73px;
     list-style: none;
 }
 
 .sample-item {
-    height: 150px;
+    height: 148px;
 }
 
 .block-item {
     height: 90px;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 29px;
+    padding-bottom: 29px;
 }
 
 figure {
@@ -1003,15 +1009,19 @@ figure {
 
 .description-item {
     display: flex;
-   justify-content: end;
-   padding: 6px 0;
 }
 
 .title-hotel {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 700;
+    line-height: 21px;
     color: #000000;
     padding: 0;
+}
+
+.description-item {
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 
 .title-hotel:hover,
@@ -1025,7 +1035,7 @@ figure {
 
 .description h3,
 .description p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #696969;
@@ -1041,7 +1051,7 @@ figure {
 
 .btn-details,
 .btn-reservation {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
     font-weight: 700px;
     color: #ffffff;
@@ -1054,7 +1064,7 @@ figure {
 .btn-details {
     background-color: #81b3d2;
     width: 110px;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 .btn-reservation {
@@ -1095,7 +1105,7 @@ figure {
     height: 28px;
     width: 110px;
     background-color: #f2f2f2; 
-    font-size: 12px; 
+    font-size: 14px; 
     line-height: 28px;
     color: #696969;
     text-align: center;
@@ -1103,8 +1113,12 @@ figure {
 }
 
 .stars p:first-of-type {
-    height: 17px;
+    height: 18px;
     margin-left: auto;
+}
+
+svg {
+    margin-left: 2px;
 }
 
 
