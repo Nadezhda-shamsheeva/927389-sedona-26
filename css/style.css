@@ -125,17 +125,15 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.welcome::before {
-    content:"";
+
+.decor {
     position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-}*/
+    top: 505px;
+}
+
+svg  {
+    fill: #ffffff;
+}
 
 .capture {
     height: 214px;
@@ -168,9 +166,13 @@ h2 {
     flex-direction: row-reverse;
 }
 
+.reason-one li,
+.reason-two li {
+    list-style: none;
+}
+
 .reason-one .text-block,
 .reason-two .text-block {
-    list-style: none;
     height: 255px;
     width: 400px;
     background-color: #81b3d2;
