@@ -33,7 +33,7 @@
             <h2 class="visually-hidden">Параметры для сортировки</h2>
             <div class="infra">
               <p>Инфраструктура:</p>
-              <div class="block-flex">
+              <form class="block-flex">
                 <div class="fields-top">
                   <input id="pool-field" type="checkbox" name="pool" checked>
                   <label for="pool-field">Бассейн</label>
@@ -48,11 +48,11 @@
                   <input id="wifi-field" type="checkbox" name="Wi-Fi">
                   <label for="wifi-field">Wi-Fi</label>
                 </div>
-              </div>
+              </form>
             </div>
             <div class="type-housing">
               <p>Тип жилья:</p>
-              <div class="block-flex">
+              <form class="block-flex">
                 <div class="fields-top">
                   <input id="hotel-field" type="checkbox" name="hotel" checked>
                   <label for="hotel-field">Гостиница</label>
@@ -67,31 +67,24 @@
                   <input type="checkbox" name="apartments" checked>
                   <label for="apartments-field">Апартаменты</label>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class="top-block">
             <div class="cost">
               <p>Стоимость в сутки (Р):</p>
-              <ul class="cost-list">
+              <form class="cost-list">
                 <div class="flex-cost">
-                  <li>
-                    <label class="visually-hidden" for="start-field">Ввод минимальной стоимости</label>
                     <input class="start-number" id="start-field" type="text" name="start" value="" placeholder="от 0">
-                  </li>
-                  <li>
-                    <label class="visually-hidden" for="finish-field">Ввод максимальной стоимости</label>
                     <input class="finish-number" id="finish-field" type="text" name="finish" value="" placeholder="до 3000">
-                  </li>
                 </div>
-                <li class="range-box">
-                  <label class="visually-hidden" for="range-field">"Бегунок" выбора стоимости</label>
+                <div class="range-box">
                   <input class="range" id="range-field" type="range" min="0" value="3000" step="100" max="4000">
                   <div class="stick"></div>
                   <span class="min-range"></span>
                   <span class="max-range"></span>
-                </li>
-              </ul>
+                </div>
+              </form>
               <button class="inner-button" type="submit">Показать</button>
             </div>
           </div>
@@ -122,9 +115,9 @@
             </span>
           </div>
         </div>
-        <ul class="sample-wrapper">
+        <div class="sample-wrapper">
           <hr>
-          <li class="sample-item">
+          <div class="sample-item">
             <div class="block-item">
               <figure>
                 <a href="#" aria-label="Фото и видео гостиниц Седоны"><img src="img/hotel-picture-1.jpg" width="135"
@@ -161,9 +154,9 @@
                 <p>Рейтинг: 8,5</p>
               </div>
             </div>
-          </li>
+          </div>
           <hr>
-          <li class="sample-item">
+          <div class="sample-item">
             <div class="block-item">
               <figure>
                 <a href="#" aria-label="Фото и видео мотелей Седоны"><img src="img/hotel-picture-2.jpg" width="135"
@@ -196,9 +189,9 @@
                 <p>Рейтинг: 8,9</p>
               </div>
             </div>
-          </li>
+          </div>
           <hr>
-          <li class="sample-item">
+          <div class="sample-item">
             <div class="block-item">
               <figure>
                 <a href="#" aria-label="Фото и видео апартаментов Седоны"><img src="img/hotel-picture-3.jpg" width="135"
@@ -227,9 +220,8 @@
                 <p>Рейтинг: 9,2</p>
               </div>
             </div>
-          </li>
-          <hr>
-        </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

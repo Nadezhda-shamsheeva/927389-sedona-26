@@ -752,7 +752,6 @@ footer {
 }
 
 .cost-list {
-    list-style: none;
     position: relative;
 }
 
@@ -1003,7 +1002,7 @@ footer {
 .sample-wrapper {
     padding-left: 73px;
     padding-right: 73px;
-    list-style: none;
+    position: relative;
 }
 
 .sample-item {
