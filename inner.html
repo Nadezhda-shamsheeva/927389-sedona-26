@@ -64,7 +64,7 @@
                 </div>
                 <br>
                 <div class="fields-top">
-                  <input type="checkbox" name="apartments" checked>
+                  <input id="apartments-field" type="checkbox" name="apartments" checked>
                   <label for="apartments-field">Апартаменты</label>
                 </div>
               </form>
@@ -75,7 +75,9 @@
               <p>Стоимость в сутки (Р):</p>
               <form class="cost-list">
                 <div class="flex-cost">
+                  <label class="visually-hidden" for="start-field">Поле ввода минимального значения</label>
                     <input class="start-number" id="start-field" type="text" name="start" value="" placeholder="от 0">
+                  <label class="visually-hidden" for="finish-field">Поле ввода максимального значения</label>
                     <input class="finish-number" id="finish-field" type="text" name="finish" value="" placeholder="до 3000">
                 </div>
                 <div class="range-box">
