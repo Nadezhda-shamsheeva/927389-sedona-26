@@ -28,12 +28,12 @@
     <main>
       <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
       <section class="inner-top">
-        <div class="inner-check">
+        <form class="inner-check" action="https://echo.htmlacademy.ru" method="POST">
           <div class="top-block">
             <h2 class="visually-hidden">Параметры для сортировки</h2>
             <div class="infra">
               <p>Инфраструктура:</p>
-              <form class="block-flex">
+              <div class="block-flex">
                 <div class="fields-top">
                   <input id="pool-field" type="checkbox" name="pool" checked>
                   <label for="pool-field">Бассейн</label>
@@ -48,11 +48,11 @@
                   <input id="wifi-field" type="checkbox" name="Wi-Fi">
                   <label for="wifi-field">Wi-Fi</label>
                 </div>
-              </form>
+              </div>
             </div>
             <div class="type-housing">
               <p>Тип жилья:</p>
-              <form class="block-flex">
+              <div class="block-flex">
                 <div class="fields-top">
                   <input id="hotel-field" type="checkbox" name="hotel" checked>
                   <label for="hotel-field">Гостиница</label>
@@ -67,13 +67,13 @@
                   <input id="apartments-field" type="checkbox" name="apartments" checked>
                   <label for="apartments-field">Апартаменты</label>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
           <div class="top-block">
             <div class="cost">
               <p>Стоимость в сутки (Р):</p>
-              <form class="cost-list">
+              <div class="cost-list">
                 <div class="flex-cost">
                   <label class="visually-hidden" for="start-field">Поле ввода минимального значения</label>
                     <input class="start-number" id="start-field" type="text" name="start" value="" placeholder="от 0">
@@ -86,11 +86,11 @@
                   <span class="min-range"></span>
                   <span class="max-range"></span>
                 </div>
-              </form>
+              </div>
               <button class="inner-button" type="submit">Показать</button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
       <section class="inner-content">
         <h2 class="visually-hidden">Вывод результатов сортировки</h2>

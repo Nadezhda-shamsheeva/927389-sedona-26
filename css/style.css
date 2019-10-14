@@ -409,7 +409,7 @@ h2 {
     padding-left: 12px;
 }
 
-.calendar {
+.calendar svg  {
     position: absolute;
     display: block;
     margin-top: -30px;
@@ -423,12 +423,14 @@ h2 {
     z-index: 20;
 }
 
-.calendar:hover {
+.calendar:hover svg path,
+.calendar:focus svg path {
     opacity: 1;
     fill: #000000;
+    cursor: pointer;
 }
 
-.calendar:active svg {
+.calendar:active svg path {
     opacity: 1;
     fill: #81b3d2;
 }
