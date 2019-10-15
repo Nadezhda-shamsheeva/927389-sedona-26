@@ -479,7 +479,11 @@ a {
 .fields-small input {
     float: left;
     width: 38px;
+    height: 38px;
+    padding: 12px 0;
     font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
     text-align: center;
 }
 
