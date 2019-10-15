@@ -88,7 +88,7 @@ a {
 }
 
 .nav-list a {
-    font-weight: 700;
+    font-weight: 600;
     color: #000000;
 }
 
@@ -118,9 +118,6 @@ a {
     position: absolute;
     bottom: 0;
     left: -2px;
-}
-
-svg  {
     fill: #ffffff;
 }
 
@@ -141,7 +138,7 @@ svg  {
 
 .capture h2 {
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 26px;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -169,186 +166,202 @@ svg  {
     color: #696969;
 }
 
-
-
-.reason-one {
+.reason-one,
+.reason-two {
     display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 255px;
+    list-style: none;
 }
 
 .reason-two {
-    width: 100%;
-    display: flex;
     flex-direction: row-reverse;
-}
-
-.reason-one li,
-.reason-two li {
-    list-style: none;
 }
 
 .reason-one .text-block,
 .reason-two .text-block {
-    height: 255px;
     width: 400px;
     background-color: #81b3d2;
 }
 
 .text-wrapper {
+    position: relative;
     padding: 42px 0 60px 0;
-    
+}
+
+.reason-one p,
+.reason-two p {
+    padding-bottom: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.reason-one p:first-of-type,
+.reason-two p:first-of-type { 
+    padding-top: 6px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.reason-two p:first-of-type { 
+    padding-bottom: 24px;
+}
+
+.reason-one p:nth-of-type(2)::before,
+.reason-two p:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 124px;
+    left: 170px;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+} 
+
+.reason-one p:nth-of-type(2)::after,
+.reason-two p:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 124px;
+    right: 170px;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+} 
+
+.reason-one p:nth-of-type(2)::before,
+.reason-one p:nth-of-type(2)::after {
+    top: 125px;
 }
 
 .reason-one figure,
 .reason-two figure {
     width: 800px;
-   margin-right: auto;
+    margin-right: auto;
 }
-
-.reason-one p,
-.reason-two p {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400px;
-    color: #ffffff;
-    text-align: center;
-    padding-bottom: 22px;
-}
-
-.reason-one p:first-of-type,
-.reason-two p:first-of-type { 
-    font-size: 21px;
-    line-height: 22px;
-    font-weight: 400;
-    padding-top: 6px;
-}
-
-.reason-two p:first-of-type { 
-   padding-bottom: 24px;
-}
-
-.reason-one p:nth-of-type(2),
-.reason-two p:nth-of-type(2)  {
-    font-size: 12px;
-    padding-bottom: 22px;
-}
-
-
 
 .extra {
-    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    height: 330px;
     margin: auto;
 }
 
 .extra li {
-    list-style: none;
     width: 400px;
-    height: 330px;
-    
+    list-style: none;
 }
 
 .extra-content {
-    padding: 60px 0 55px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 60px 0 55px 0;
 }
 
-.extra p {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
+.extra-content p {
+    padding-bottom: 22px;
     color: #696969;
     text-align: center;
-    padding-bottom: 22px;
 }
 
-
-.extra li p:nth-child(2),
-.reason-else p:first-child {
+.extra-content p:nth-of-type(2) {
+    padding-top: 2px;
+    padding-bottom: 20px;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: 600;
     color: #000000;
 }
 
-.extra li p:nth-child(2) {
-    padding-top: 2px;
-    padding-bottom: 20px;
-}
-
 .reason-else  {
-    background-color: #eeeeee;
     display: flex;
+    flex-direction: row;
     align-content: space-between;
+    width: 100%;
+    height: 255px;
+    background-color: #eeeeee;
 }
 
 .reason-else li {
-    list-style: none;
-    height: 255px;
     width: 400px;
+    list-style: none;
 }
 
 .text-else {
+    position: relative;
     padding: 50px 0 85px 0;
 }
 
 .reason-else p {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 400px;
-    text-align: center;
     padding-bottom: 22px;
+    text-align: center;
     color: #656565;
 }
 
 .reason-else p:first-of-type {
     font-size: 20px;
     line-height: 22px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000000;
 }
 
+.reason-else p:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 125px;
+    left: 170px;
+    width: 10px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.reason-else p:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 125px;
+    right: 170px;
+    width: 10px;
+    height: 1px;
+    background-color: #000000;
+}
 .favour {
     min-height: 763px;
 }
 
 .favour-title {
     min-height: 293px;
-    background-color: #ffffff;
+    text-align: center;
 }
 
 .favour-title p:first-of-type {
     padding-top: 52px;
     padding-bottom: 23px;
-}
-
-.favour-title p:nth-child(2) {
     font-size: 28px;
-    line-height: 40px;
     font-weight: 700px;
-    text-align: center;
+    line-height: 40px;
 }
 
-.favour-title p:nth-child(3) {
+.favour-title p:last-of-type {
    font-size: 13px;
+   font-weight: 600;
    line-height: 24px;
-   font-weight: 400;
    color: #696969;
-   text-align: center;
 }
-/*Форма*/
+
 .map {
     position: relative;
 }
 
 .form-search {
-    background-color: #ffffff;
-    width: 572px;
-    height: 395px;
     position: absolute;
     top: -86px;
     padding-top: 86px;
@@ -356,28 +369,32 @@ svg  {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    width: 572px;
+    height: 395px;
+    background-color: #ffffff;
 }
 
-.form-search h3 {
-    font-size: 20px;
-    line-height: 86px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-}
-
-.form-search .form-title {
-    background-color: #766357;
+.form-title {
     margin-top: -86px;
+    text-align: center;
+    background-color: #766357;
 }
 
-.form-search .form-title:hover {
+.form-title:hover,
+.form-title:focus {
     background-color: #604e43;
     cursor: pointer;
 }
 
-.form-search .form-title:active {
+.form-title:active {
     background-color: #503e33;
+}
+
+.form-title h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 86px;
+    color: #ffffff;
 }
 
 .form-search h3:active {
@@ -392,61 +409,55 @@ svg  {
     position: relative;
     margin-bottom: 30px;
     clear: both;
+    height: 38px;
     text-align: right;
 }
 
 .fields-large label,
 .fields-small label {
     float: left;
-    font-size: 14px;
-    line-height: 38px;
+    font-size: inherit;
 }
 
 .fields-large label {
     padding-left: 3px;
-    padding-top: 2px;
+    padding-top: 10px;
 }
 
 .form-body input {
-    padding-top: 8px;
-    padding-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     box-sizing: border-box;
-    background-color: #f2f2f2;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: inherit;
     text-transform: uppercase;
+    background-color: #f2f2f2;
     border: none;
 }
 
 .form-body input[name="arrivaldate"],
 .form-body input[name="departuredate"] {
-    width: 345px;
     padding-left: 12px;
+    width: 345px;
 }
 
 .calendar svg  {
     position: absolute;
-    display: block;
     margin-top: -30px;
     right: 10px;
     width: 21px;
     height: 22px;
     background-color: transparent;
     background-repeat: no-repeat;
-    opacity: 1;
     fill: #d7d7d7;
-    z-index: 20;
 }
 
 .calendar:hover svg path,
 .calendar:focus svg path {
-    opacity: 1;
     fill: #000000;
     cursor: pointer;
 }
 
 .calendar:active svg path {
-    opacity: 1;
     fill: #81b3d2;
 }
 
@@ -458,7 +469,7 @@ svg  {
 
 .fields-small label {
     float: left;
-    padding-top: 2px;
+    padding-top: 10px;
 }
 
 .fields-small label[for=children] {
@@ -468,8 +479,8 @@ svg  {
 .fields-small input {
     float: left;
     width: 38px;
+    font-size: inherit;
     text-align: center;
-    font-size: 14px;
 }
 
 .fields-small div {
@@ -480,19 +491,21 @@ svg  {
     float: left;
     width: 38px;
     height: 38px;
-    border: none;
-    background-color: #f2f2f2;
+    padding-top: 7px 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: inherit;
+    line-height: 24px;
     color: #a9a9a9;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
     text-transform: uppercase;
-    font-weight: 700;
+    background-color: #f2f2f2;
+    border: none;
 }
 
 .fields-small .btn:hover {
     color: #000000;
     background-color: #ebebeb;
+    cursor: pointer;
 }
 
 .fields-small .btn:focus {
@@ -509,12 +522,12 @@ svg  {
     margin: 55px 0 0;
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: #81b3d2;
-    text-align: center;
-    color: #ffffff;
     font-size: 20px;
+    font-weight: 600;
     line-height: 26px;
-    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #81b3d2;
 }
 
 .form-body input[type=submit]:hover {
@@ -533,7 +546,6 @@ footer {
     display: flex;
     padding: 0 73px;
     justify-content: space-between;
-   /* align-content: center;*/
 }
 
 .visits,
