@@ -751,23 +751,17 @@ footer {
         width: 26px;
         height: 22px;
         background-image: url("../img/checkbox-on.svg");
-       /* background-size: cover;*/
         background-repeat: no-repeat;
     }
 
-
 .cost {
-    height: 155px;
     width: 320px;
+    height: 155px;
     margin-left: auto;
     padding-right: 73px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.cost-list {
-    position: relative;
 }
 
 .cost p {
@@ -775,23 +769,38 @@ footer {
     text-align: left;
 }
 
+.cost-list {
+    position: relative;
+}
+
+.cost-list::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    display: block;
+    width: 2px;
+    height: 22px;
+    background-color: #ffffff;
+}
+
  .flex-cost {
     display: flex;
+    flex-direction: row;
 }
 
 .start-number,
 .finish-number,
 .inner-button {
-    width: 157px;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 400;
+    width: 50%;
+    height: 32px;
+    font-size: inherit;
+    font-weight: inherit;
     color:#ffffff;
     text-transform: uppercase;
-    height: 32px;
-    border: 2px solid #ffffff;
     text-align: center;
     background-color: transparent;
+    border: 2px solid #ffffff;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -809,17 +818,6 @@ footer {
     border-right-color: transparent;
 }
 
-.cost-list::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 22px;
-    display: block;
-    background-color: #ffffff;
-    top: 7px;
-    left: 50%;
-}
-
 .start-number:hover,
 .finish-number:hover {
     cursor: pointer;
@@ -835,14 +833,13 @@ footer {
     color: transparent;
 }
 
-
 .range-box {
     position: relative;
     height: 2px;
-    background-color: #ababab;
     margin-top: 20px;
     margin-left: 10px;
     margin-bottom: 32px;
+    background-color: #ababab;
 }
 
 .range {
@@ -890,9 +887,9 @@ footer {
 }
 
 .max-range:hover {
+    top: -12px;
     width: 6px;
     height: 6px;
-    top: -12px;
     border: 12px solid #ffffff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -902,18 +899,18 @@ footer {
     box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
 }
 
-
 .inner-button {
     width: 138px;
     height: 36px;
-    font-size: 14px;
+    margin-right: 4px;
+    /*font-size: 14px;
     line-height: 21px;
     text-align: center;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    -o-border-radius: 2px;*/
 }
 
 .inner-button:hover {
