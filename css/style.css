@@ -733,28 +733,27 @@ footer {
   .fields-top input[type="checkbox"]+label::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: -5px;
     left: -40px;
     display: block;
     width: 22px;
     height: 22px;
     background-image: url("../img/checkbox-off.svg");
-    background-size: cover;
     background-repeat: no-repeat;
     }
 
-    /*.fields-top input[type="checkbox"]:checked+label::after {
+    .fields-top input[type="checkbox"]:checked+label::after {
         content: "";
         position: absolute;
-        top: 8px;
+        top: -5px;
         left: -40px;
         display: block;
         width: 26px;
         height: 22px;
         background-image: url("../img/checkbox-on.svg");
-        background-size: cover;
+       /* background-size: cover;*/
         background-repeat: no-repeat;
-    }*/
+    }
 
 
 .cost {
