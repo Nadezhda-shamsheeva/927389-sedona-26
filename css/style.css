@@ -903,14 +903,6 @@ footer {
     width: 138px;
     height: 36px;
     margin-right: 4px;
-    /*font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;*/
 }
 
 .inner-button:hover {
@@ -925,44 +917,47 @@ footer {
 }
 
 .sorted {
-    height: 86px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    height: 84px;
 }
 
 .result {
     width: 165px;
     padding-left: 73px;
+    padding-top: 30px;
 }
 
 .result p {
     font-size: 21px;
-    line-height: 25px;
     font-weight: 700;
+    line-height: 21px;
     color: #000000;
 }
 
 .menu {
-    min-width: 700px;
     display: flex;
-    margin-top: 5px;
+    flex-direction: row;
+    align-items: center;
+    min-width: 700px;
 }
 
 .menu p {
     width: 115px;
-    font-size: 11px;
-    line-height: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: inherit;
+    line-height: 12px;
 }
 
 .menu-link {
-    width: 400px;
     display: flex;
+    flex-direction: row;
+    min-width: 400px;
 }
 
 .menu-link a {
     font-size: 11px;
-    font-weight: 400;
+    font-weight: inherit;
     color: #b2b2b2;
     border-bottom: 1px dotted #b2b2b2;
     margin-right: 35px;
@@ -986,12 +981,14 @@ footer {
 
 .arrows {
     width: 95px;
-    margin-right: 25px;
+    margin-top: 31px;
     margin-left: auto;
+    margin-right: 14px;
 }
 
 .arrows span {
-    padding-left: 10px;
+    margin-left: auto;
+    margin-right: 8px;
 }
 
 .arrow-up svg path {
@@ -999,10 +996,9 @@ footer {
 }
 
 .arrow-up:hover svg path,
-.arrow-up:focus svg path,
-.arrow-down:hover svg path,
-.arrow-down:focus svg path {
+.arrow-down:hover svg path {
     fill: #231f20;
+    cursor: pointer;
 }
 
 .arrow-up:active svg path,
@@ -1011,19 +1007,21 @@ footer {
     fill: #81b3d2;
 }
 
-.sample-wrapper {
-    padding-left: 73px;
-    padding-right: 73px;
-    position: relative;
+.sample-wrapper hr {
+    width: 100%;
+    opacity: 0.3;
 }
 
 .sample-item {
     height: 148px;
+    padding-left: 73px;
+    padding-right: 73px;
 }
 
 .block-item {
-    height: 90px;
     display: flex;
+    flex-direction: row;
+    height: 90px;
     padding-top: 28px;
     padding-bottom: 28px;
 }
@@ -1038,22 +1036,18 @@ figure {
     min-width: 260px;
 }
 
-.description-item {
-    display: flex;
-}
-
 .title-hotel {
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 21px;
     color: #000000;
-    padding: 0;
-    padding-top: -4px;
 }
 
 .description-item {
-    margin-top: 8px;
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    padding-top: 12px;
 }
 
 .title-hotel:hover,
@@ -1067,51 +1061,47 @@ figure {
 
 .description h3,
 .description p {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    line-height: 14px;
     color: #696969;
 }
 
 .description h3 {
-    width: 118px;
-}
-
-.description p {
-    width: 142px;
+    width: 116px;
 }
 
 .btn-details,
 .btn-reservation {
-    font-size: 14px;
-    line-height: 28px;
+    padding: 5px 16px;
     font-weight: 700px;
+    line-height: 14px;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    height: 28px;
     border: none;
 }
 
 .btn-details {
-    background-color: #81b3d2;
-    width: 110px;
     margin-right: 4px;
+    background-color: #81b3d2;
 }
 
 .btn-reservation {
     background-color: #766357;
-    width: 142px;
 }
 
 .btn-details:hover,
 .btn-details:focus {
     background-color: #669ec0;
+    cursor: pointer;
 }
 
 .btn-reservation:hover,
 .btn-reservation:focus {
     background-color: #604e43;
+    cursor: pointer;
 }
 
 .btn-details:active {
@@ -1119,29 +1109,25 @@ figure {
     background-color: #5496bd;
 }
 
-
 .btn-reservation:active {
     color: #81746d;
     background-color: #503e33;
 }
 
 .stars {
-    width: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 110px;
     margin-left: auto;
 }
 
 .stars p:last-of-type {
-    height: 28px;
-    width: 110px;
-    background-color: #f2f2f2; 
-    font-size: 14px; 
-    line-height: 28px;
+    margin-left: auto;
+    padding: 4px 10px;
     color: #696969;
     text-align: center;
-    margin-left: auto;
+    background-color: #f2f2f2; 
 }
 
 .stars p:first-of-type {
