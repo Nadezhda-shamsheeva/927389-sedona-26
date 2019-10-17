@@ -132,7 +132,7 @@ a {
 
 .capture {
     position: relative;
-    height: 214px;
+    min-height: 214px;
     text-align: center;
 }
 
@@ -187,7 +187,7 @@ a {
 
 .text-wrapper {
     position: relative;
-    padding: 42px 0 60px 0;
+    padding: 42px 0;
 }
 
 .reason-one p,
@@ -238,18 +238,28 @@ a {
     top: 125px;
 }
 
-.reason-one figure,
-.reason-two figure {
+.reason-one p:last-of-type,
+.reason-two p:last-of-type {
+    padding-bottom: 0;
+}
+
+.reason-image {
     width: 800px;
+    height: 100%;
     margin-right: auto;
+}
+
+.reason-image img {
+    height: 100%;
 }
 
 .extra {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 330px;
+    min-height: 330px;
     margin: auto;
 }
 
@@ -275,17 +285,18 @@ a {
     padding-top: 2px;
     padding-bottom: 20px;
     font-size: 20px;
-    line-height: 26px;
     font-weight: 600;
+    line-height: 26px;
     color: #000000;
 }
 
 .reason-else  {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 255px;
+    min-height: 255px;
     background-color: #eeeeee;
 }
 
@@ -296,7 +307,7 @@ a {
 
 .text-else {
     position: relative;
-    padding: 50px 0 85px 0;
+    padding-top: 50px;
 }
 
 .reason-else p {
@@ -342,7 +353,7 @@ a {
     text-align: center;
 }
 
-.favour-title p:first-of-type {
+.favour-title .big-title {
     padding-top: 52px;
     padding-bottom: 23px;
     font-size: 28px;
@@ -350,7 +361,7 @@ a {
     line-height: 40px;
 }
 
-.favour-title p:last-of-type {
+.favour-title p {
    font-size: 13px;
    font-weight: 600;
    line-height: 24px;
