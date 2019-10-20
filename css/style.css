@@ -138,28 +138,13 @@ a {
 
 .capture h2 {
     font-size: 21px;
-    font-weight: 600;
     line-height: 26px;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 30px;
 }
 
-.capture span {
-    white-space: pre;
-}
-
-.capture span::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 462px;
-    top: 70px;
-    width: 20px;
-    height: 2px;
-    background-color: #000000;
-}
-
 .capture h3 {
+    padding: 0 73px 54px 73px;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
@@ -171,7 +156,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 255px;
+    min-height: 255px;
     list-style: none;
 }
 
@@ -179,73 +164,34 @@ a {
     flex-direction: row-reverse;
 }
 
-.reason-one .text-block,
-.reason-two .text-block {
+.text-block {
     width: 400px;
+    height: 100%;
     background-color: #81b3d2;
 }
 
 .text-wrapper {
-    position: relative;
-    padding: 42px 0;
+    padding: 46px 0 59px 0;
 }
 
-.reason-one p,
-.reason-two p {
-    padding-bottom: 22px;
+.text-wrapper p {
     color: #ffffff;
     text-align: center;
 }
 
-.reason-one p:first-of-type,
-.reason-two p:first-of-type { 
-    padding-top: 6px;
+.text-wrapper p:first-of-type { 
+    padding-bottom: 24px;
     font-size: 21px;
-    font-weight: 600;
     line-height: 22px;
 }
 
-.reason-two p:first-of-type { 
-    padding-bottom: 24px;
-}
-
-.reason-one p:nth-of-type(2)::before,
-.reason-two p:nth-of-type(2)::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 124px;
-    left: 170px;
-    width: 10px;
-    height: 1px;
-    background-color: #ffffff;
-} 
-
-.reason-one p:nth-of-type(2)::after,
-.reason-two p:nth-of-type(2)::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 124px;
-    right: 170px;
-    width: 10px;
-    height: 1px;
-    background-color: #ffffff;
-} 
-
-.reason-one p:nth-of-type(2)::before,
-.reason-one p:nth-of-type(2)::after {
-    top: 125px;
-}
-
-.reason-one p:last-of-type,
-.reason-two p:last-of-type {
-    padding-bottom: 0;
+.text-wrapper p:nth-of-type(2) {
+    padding-bottom: 22px;
 }
 
 .reason-image {
     width: 800px;
-    height: 100%;
+    min-height: 255px;
     margin-right: auto;
 }
 
@@ -265,6 +211,7 @@ a {
 
 .extra li {
     width: 400px;
+    height: 100%;
     list-style: none;
 }
 
@@ -272,7 +219,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 0 55px 0;
+    padding: 60px 20px 55px 20px;
 }
 
 .extra-content p {
@@ -306,8 +253,7 @@ a {
 }
 
 .text-else {
-    position: relative;
-    padding-top: 50px;
+    padding: 50px 20px 0 20px;
 }
 
 .reason-else p {
@@ -317,33 +263,13 @@ a {
 }
 
 .reason-else p:first-of-type {
+    padding-bottom: 23px;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 21px;
     font-weight: 500;
     color: #000000;
 }
 
-.reason-else p:nth-of-type(2)::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 125px;
-    left: 170px;
-    width: 10px;
-    height: 1px;
-    background-color: #000000;
-}
-
-.reason-else p:nth-of-type(2)::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 125px;
-    right: 170px;
-    width: 10px;
-    height: 1px;
-    background-color: #000000;
-}
 .favour {
     min-height: 763px;
 }
@@ -362,6 +288,7 @@ a {
 }
 
 .favour-title p {
+    padding: 0 73px 130px 73px;
    font-size: 13px;
    font-weight: 600;
    line-height: 24px;
@@ -563,9 +490,9 @@ footer {
 }
 
 .visits  {
-    width: 240px;
-    margin-top: 46px;
-    padding-left: 10px;
+    min-width: 240px;
+    margin-top: 43px;
+    margin-left: 10px;
     text-align: center;
 }
 
@@ -578,14 +505,18 @@ footer {
 
 .social-icon {
     display: flex;
-    justify-content: space-between;
-    width: 150px;
-    height: 48px;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    min-width: 150px;
     margin-top: 31px;
 }
 
 .icon-item {
+    box-sizing: border-box;
     width: 46px;
+    height: 48px;
+    margin: 0 6px 6px 0;
     padding-top: 15px;
     list-style: none;
     text-align: center;
@@ -610,6 +541,11 @@ footer {
 	background-color: #5496bd;
  }
 
+ .icon-link {
+     width: 46px;
+     height: 48px;
+ }
+
  .icon-link:active img {
      background-color: #88b6d1;
      opacity: 0.3;
@@ -618,9 +554,9 @@ footer {
 .footer-logo {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     align-content: center;
-    width: 240px;
+    min-width: 240px;
 }
 
 .footer-logo p {
