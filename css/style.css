@@ -302,7 +302,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 572px;
-    height: 395px;
+    height: 395;
     font-size: inherit;
     font-weight: inherit;
     font-family: inherit;
@@ -317,7 +317,8 @@ a {
     background-color: #766357;
 }
 
-.form-title:hover, .form-title:focus {
+.form-title:hover, 
+.form-title:focus {
     background-color: #604e43;
     cursor: pointer;
 }
@@ -479,9 +480,8 @@ footer {
 }
 
 .visits {
-    min-width: 240px;
+    min-width: 260px;
     margin-top: 43px;
-    margin-left: 10px;
     text-align: center;
 }
 
@@ -495,7 +495,7 @@ footer {
 .social-icon {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     min-width: 150px;
     margin-top: 31px;
@@ -542,9 +542,9 @@ footer {
 .footer-logo {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
-    min-width: 240px;
+    min-width: 260px;
 }
 
 .footer-logo p {
