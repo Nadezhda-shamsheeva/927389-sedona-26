@@ -308,7 +308,6 @@ a {
     font-family: inherit;
     line-height: inherit;
     text-transform: inherit;
-    background-color: #ffffff;
 }
 
 .form-title {
@@ -317,8 +316,7 @@ a {
     background-color: #766357;
 }
 
-.form-title:hover, 
-.form-title:focus {
+.form-title:hover, .form-title:focus {
     background-color: #604e43;
     cursor: pointer;
 }
@@ -341,7 +339,22 @@ a {
 }
 
 .form-body {
+    padding: 0px;
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: max-height 0,5s easy-in;
+    -webkit-transition: max-height 0,5s easy-in;
+    -moz-transition: max-height 0,5s easy-in;
+    -ms-transition: max-height 0,5s easy-in;
+    -o-transition: max-height 0,5s easy-in;
+}
+
+.form-body.open {
     padding: 55px;
+    height: auto;
+    max-height: 600px;
 }
 
 .fields-large {
@@ -865,7 +878,7 @@ footer {
     margin-bottom: 3px;
 }
 
-.menu {
+.sort {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -874,14 +887,14 @@ footer {
     height: 100%;
 }
 
-.menu p {
+.sort p {
     width: 115px;
     font-size: 12px;
     font-weight: inherit;
     line-height: 12px;
 }
 
-.menu-link {
+.sort-link {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -889,7 +902,7 @@ footer {
     min-width: 400px;
 }
 
-.menu-link a {
+.sort-link a {
     font-size: 11px;
     font-weight: inherit;
     color: #b2b2b2;
@@ -899,17 +912,18 @@ footer {
     border-bottom: 1px dotted #b2b2b2;
 }
 
-.menu-link .active {
+.sort-link .active {
     color: #81b3d2;
     border-bottom: none;
 }
 
-.menu-link a:hover, .menu-link a:focus {
+.sort-link a:hover, 
+.sort-link a:focus {
     color: #81b3d2;
     border-bottom: 2px dotted #81b3d2;
 }
 
-.menu-link a:active {
+.sort-link a:active {
     color: #000000;
     border-bottom: none;
 }
@@ -921,7 +935,7 @@ footer {
     margin-right: 14px;
 }
 
-.arrows span {
+.arrows a {
     margin-left: auto;
     margin-right: 8px;
 }
@@ -930,12 +944,15 @@ footer {
     fill: #cacaca;
 }
 
-.arrow-up:hover svg path, .arrow-down:hover svg path {
+.arrow-up:hover svg path, 
+.arrow-down:hover svg path {
     fill: #231f20;
     cursor: pointer;
 }
 
-.arrow-up:active svg path, .arrow-down:active svg path, .arrow-down .active path {
+.arrow-up:active svg path, 
+.arrow-down:active svg path, 
+.arrow-down .active path {
     fill: #81b3d2;
 }
 

@@ -8,7 +8,7 @@
   заслуживающий большего! Отдых в Седоне круче, чем в Гранд Каньоне!">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -33,9 +33,9 @@
             <polygon points="0,0 0,60 1200,60 1200,0 950,25 950,0 600,60 250,0 250,25 0,0" />
           </svg>
         </div>
-        <h1 class="visually-hidden">Седона</h1>
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <figure>
-          <img src="img/welcome.png" width="458" height="353" alt="Sedona">
+          <img src="img/welcome.png" width="458" height="353" alt="Добро пожаловать в Седону!">
         </figure>
       </section>
       <section>
@@ -142,10 +142,10 @@
         </div>
         <div class="map">
           <div class="form-search">
-            <div class="form-title">
+            <div id="openbtn" class="form-title">
               <h3>Поиск гостиницы в Седоне</h3>
             </div>
-            <form class="form-body" action="https://echo.htmlacademy.ru" method="POST">
+            <form id="search-form" class="form-body open" action="https://echo.htmlacademy.ru" method="POST">
               <div class="fields-large">
                 <label for="arrival">Дата заезда:</label>
                 <input class="large" id="arrival" type="text" name="arrivaldate" value="" placeholder="24 апреля 2017">
@@ -229,6 +229,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
