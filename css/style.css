@@ -19,6 +19,7 @@ img {
 
 .wrapper {
     max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1), -1px 0 10px rgba(0, 0, 0, 0.1);
@@ -590,6 +591,7 @@ footer {
 
 .inner-wrapper {
     max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     background-color: #fefefe;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1), -1px 0 10px rgba(0, 0, 0, 0.1);
@@ -735,7 +737,7 @@ footer {
     flex-direction: row;
 }
 
-.start-number, .finish-number, .inner-button {
+.start-number, .finish-number {
     width: 156px;
     height: 32px;
     font-size: inherit;
@@ -765,7 +767,8 @@ footer {
     cursor: pointer;
 }
 
-.start-number::placeholder, .finish-number::placeholder {
+.start-number::placeholder, 
+.finish-number::placeholder {
     color: #ffffff;
 }
 
@@ -840,10 +843,21 @@ footer {
 }
 
 .inner-button {
-    width: 138px;
-    height: 36px;
     margin-right: 4px;
     margin-bottom: 4px;
+    padding: 9px 34px;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .inner-button:hover {
@@ -961,44 +975,36 @@ footer {
     opacity: 0.3;
 }
 
-.sample-item {
-    min-height: 149px;
+.block-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 149px;
     padding-left: 73px;
     padding-right: 73px;
 }
 
-.block-item {
-    display: flex;
-    flex-direction: row;
-    height: 90px;
-    padding-top: 30px;
-    padding-bottom: 29px;
-}
-
-figure {
+.block-item figure {
     width: 135px;
-    height: 90px;
+    min-height: 90px;
     margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 29px;
 }
 
 .description {
     min-width: 260px;
+    height: 100%;
+    margin-top: 28px;
+    margin-bottom: 29px;
 }
 
 .title-hotel {
-    margin: 0;
-    padding: 0;
+    padding-bottom: 8px;
     font-size: 21px;
     font-weight: 600;
     line-height: 21px;
     color: #000000;
-}
-
-.description-item {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 22px;
 }
 
 .title-hotel:hover, .title-hotel:focus {
@@ -1009,16 +1015,29 @@ figure {
     color: #b2b2b2;
 }
 
-.description h3, .description p {
+.description-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description h3, 
+.description p {
     font-size: inherit;
     font-weight: inherit;
     font-family: inherit;
-    line-height: 14px;
+    line-height: inherit;
     color: #696969;
 }
 
 .description h3 {
-    width: 116px;
+    min-width: 110px;
+    margin-right: 6px;
+}
+
+.description-btn {
+padding-top: 20px;
+margin-right: 4px;
 }
 
 .btn-details, .btn-reservation {
@@ -1028,16 +1047,16 @@ figure {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    border: none;
+
 }
 
 .btn-details {
-    margin-right: 4px;
     background-color: #81b3d2;
 }
 
 .btn-reservation {
     background-color: #766357;
+    padding-left: 18px;
 }
 
 .btn-details:hover, .btn-details:focus {
@@ -1063,24 +1082,27 @@ figure {
 .stars {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     min-width: 110px;
+    height: 100%;
     margin-left: auto;
+}
+
+.stars p:first-of-type {
+    height: 18px;
+    margin-left: auto;
+    margin-top: 30px;
 }
 
 .stars p:last-of-type {
     margin-left: auto;
+    margin-top: 45px;
     padding: 4px 10px;
     color: #696969;
     text-align: center;
     background-color: #f2f2f2;
 }
 
-.stars p:first-of-type {
-    height: 18px;
-    margin-left: auto;
-}
-
-svg {
+.stars svg {
     margin-left: 2px;
 }
