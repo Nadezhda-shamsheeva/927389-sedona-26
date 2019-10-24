@@ -113,7 +113,8 @@ a {
 .decor svg {
     position: absolute;
     bottom: -1px;
-    left: -2px;
+    left: -1px;
+    right: -1px;
     fill: #ffffff;
 }
 
@@ -133,7 +134,10 @@ a {
 }
 
 .capture h2 {
+    width: 450px;
+    margin: 0 auto;
     font-size: 21px;
+    font-weight: inherit;
     line-height: 26px;
     padding-top: 58px;
     padding-bottom: 30px;
@@ -166,7 +170,7 @@ a {
 }
 
 .text-wrapper {
-    padding: 46px 0 59px 0;
+    padding: 46px 0 60px 0;
 }
 
 .text-wrapper p {
@@ -175,7 +179,7 @@ a {
 }
 
 .text-wrapper p:first-of-type {
-    padding-bottom: 24px;
+    padding: 0 88px 24px 88px;
     font-size: 21px;
     line-height: 22px;
 }
@@ -185,6 +189,8 @@ a {
 }
 
 .reason-image {
+    display: flex;
+    flex-direction: row;
     width: 800px;
     min-height: 255px;
     margin-right: auto;
@@ -214,11 +220,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 20px 55px 20px;
+    padding: 55px 20px 55px 20px;
 }
 
 .extra-content p {
-    padding-bottom: 22px;
+    padding-bottom: 25px;
     color: #696969;
     text-align: center;
 }
@@ -278,7 +284,7 @@ a {
     padding-top: 52px;
     padding-bottom: 23px;
     font-size: 28px;
-    font-weight: 700px;
+    font-weight: inherit;
     line-height: 40px;
 }
 
@@ -294,10 +300,15 @@ a {
     position: relative;
 }
 
+.map iframe {
+    width: 100%;
+    height: 475px;
+}
+
 .form-search {
     position: absolute;
-    top: -86px;
-    padding-top: 86px;
+    top: -182px;
+    padding-top: 96px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -312,7 +323,15 @@ a {
 }
 
 .form-title {
-    margin-top: -86px;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 31px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: inherit;
+    color: #ffffff;
+    border: 0;
+    text-transform: uppercase;
     text-align: center;
     background-color: #766357;
 }
@@ -323,19 +342,11 @@ a {
 }
 
 .form-title:active {
+    color: #857871;
     background-color: #503e33;
 }
 
-.form-title h3 {
-    padding-top: 35px;
-    padding-bottom: 31px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #ffffff;
-}
-
-.form-search h3:active {
+.form-title h3:active {
     color: #857871;
 }
 
@@ -486,7 +497,7 @@ a {
     color: #88b6d1;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     min-height: 120px;
@@ -674,7 +685,7 @@ footer {
     position: relative;
     display: block;
     margin-left: 40px;
-    padding-bottom: 18px;
+    padding-bottom: 32px;
     cursor: pointer;
 }
 
@@ -810,6 +821,11 @@ footer {
     -o-border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 
 .max-range {
@@ -827,10 +843,23 @@ footer {
     -o-border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.min-range:hover {
+    top: -14px;
+    left: -14px;
+    width: 6px;
+    height: 6px;
+    border: 12px solid #ffffff;
 }
 
 .max-range:hover {
-    top: -12px;
+    top: -14px;
     width: 6px;
     height: 6px;
     border: 12px solid #ffffff;

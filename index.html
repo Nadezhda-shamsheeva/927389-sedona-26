@@ -8,6 +8,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
 </head>
 <body>
   <div class="wrapper">
@@ -27,8 +28,8 @@
     <main>
       <section class="welcome">
         <div class="decor">
-          <svg width="1200" height="60" viewBox="0 0 1200 60">
-            <polygon points="0,0 0,60 1200,60 1200,0 950,25 950,0 600,60 250,0 250,25 0,0" />
+          <svg width="1201" height="60" viewBox="0 0 1201 60">
+            <polygon points="0,0 0,60 1201,60 1201,0 950,25 950,0 600,60 250,0 250,25 0,0" />
           </svg>
         </div>
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
@@ -84,7 +85,7 @@
                 <img src="img/icon-2.svg" width="74" height="72" alt="Графическое изображение подарка">
               </p>
               <p>Сувениры</p>
-              <p>Не только китайского, но и местного<br>
+              <p>Не только китайского,&nbsp;но&nbsp;и&nbsp;местного
                 производства!</p>
             </div>
           </li>
@@ -92,7 +93,7 @@
         <ul class="reason-two">
           <li class="text-block">
             <div class="text-wrapper">
-              <p>Там есть<br>мост дьявола</p>
+              <p>Там есть&nbsp;мост дьявола</p>
               <p>&mdash; № 2 &mdash;</p>
               <p>Да, по нему можно пройти! Если конечно<br>
                 вы осмелитесь</p>
@@ -140,7 +141,7 @@
         </div>
         <div class="map">
           <div class="form-search">
-            <div id="openbtn" class="form-title">
+            <div id="openbtn" class="form-title" value="отправить">
               <h3>Поиск гостиницы в Седоне</h3>
             </div>
             <form id="search-form" class="form-body" action="https://echo.htmlacademy.ru" method="POST">
@@ -187,11 +188,13 @@
               <input type="submit" value="Найти">
             </form>
           </div>
-          <img src="img/map.png" width="1200" height="475" alt="Изображение карты">
+          <iframe aria-label="Карта города Седона, Аризона 86336, США" title="Map of Sedona"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373180.79615911253!2d-111.9351694871143!3d34.894939474639344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sin!4v1571116060483!5m2!1sru!2sin"
+            style="border:0;" allowfullscreen=""></iframe>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="visits">
         <a href="#" aria-label="Контактная информация">#visitsedona</a>
       </div>
