@@ -356,11 +356,11 @@ a {
     height: 0;
     overflow: hidden;
     background-color: #ffffff;
-    transition: max-height 0,5s easy-in;
-    -webkit-transition: max-height 0,5s easy-in;
-    -moz-transition: max-height 0,5s easy-in;
-    -ms-transition: max-height 0,5s easy-in;
-    -o-transition: max-height 0,5s easy-in;
+    transition: max-height 0, 5s easy-in;
+    -webkit-transition: max-height 0, 5s easy-in;
+    -moz-transition: max-height 0, 5s easy-in;
+    -ms-transition: max-height 0, 5s easy-in;
+    -o-transition: max-height 0, 5s easy-in;
 }
 
 .form-body.open {
@@ -778,8 +778,7 @@ a {
     cursor: pointer;
 }
 
-.start-number::placeholder, 
-.finish-number::placeholder {
+.start-number::placeholder, .finish-number::placeholder {
     color: #ffffff;
 }
 
@@ -960,8 +959,7 @@ a {
     border-bottom: none;
 }
 
-.sort-link a:hover, 
-.sort-link a:focus {
+.sort-link a:hover, .sort-link a:focus {
     color: #81b3d2;
     border-bottom: 2px dotted #81b3d2;
 }
@@ -987,15 +985,12 @@ a {
     fill: #cacaca;
 }
 
-.arrow-up:hover svg path, 
-.arrow-down:hover svg path {
+.arrow-up:hover svg path, .arrow-down:hover svg path {
     fill: #231f20;
     cursor: pointer;
 }
 
-.arrow-up:active svg path, 
-.arrow-down:active svg path, 
-.arrow-down .active path {
+.arrow-up:active svg path, .arrow-down:active svg path, .arrow-down .active path {
     fill: #81b3d2;
 }
 
@@ -1008,14 +1003,16 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 149px;
+    min-height: 149px;
     padding-left: 73px;
     padding-right: 73px;
 }
 
 .block-item figure {
+    display: flex;
+    flex-direction: row;
     width: 135px;
-    min-height: 90px;
+    height: 90px;
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 29px;
@@ -1023,13 +1020,13 @@ a {
 
 .description {
     min-width: 260px;
-    height: 100%;
+    min-height: 92px;
     margin-top: 28px;
     margin-bottom: 29px;
 }
 
 .title-hotel {
-    padding-bottom: 8px;
+    padding-bottom: 0;
     font-size: 21px;
     font-weight: 600;
     line-height: 21px;
@@ -1048,14 +1045,15 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 37px;
+    align-items: center;
 }
 
-.description h3, 
-.description p {
+.description h3, .description p {
     font-size: inherit;
     font-weight: inherit;
     font-family: inherit;
-    line-height: inherit;
+    line-height: 21px;
     color: #696969;
 }
 
@@ -1065,18 +1063,17 @@ a {
 }
 
 .description-btn {
-padding-top: 20px;
-margin-right: 4px;
+    padding-top: 9px;
 }
 
 .btn-details, .btn-reservation {
+    margin-right: 4px;
     padding: 5px 16px;
     font-weight: 700px;
     line-height: 14px;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-
 }
 
 .btn-details {
@@ -1085,7 +1082,6 @@ margin-right: 4px;
 
 .btn-reservation {
     background-color: #766357;
-    padding-left: 18px;
 }
 
 .btn-details:hover, .btn-details:focus {
