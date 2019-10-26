@@ -170,7 +170,7 @@ a {
 }
 
 .text-wrapper {
-    padding: 46px 0 60px 0;
+    padding: 46px 40px 60px 40px;
 }
 
 .text-wrapper p {
@@ -179,7 +179,7 @@ a {
 }
 
 .text-wrapper p:first-of-type {
-    padding: 0 88px 24px 88px;
+    padding: 0 60px 24px 60px;
     font-size: 21px;
     line-height: 22px;
 }
@@ -220,7 +220,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 55px 20px 55px 20px;
+    padding: 55px 40px 55px 40px;
 }
 
 .extra-content p {
@@ -254,16 +254,18 @@ a {
 }
 
 .text-else {
-    padding: 50px 20px 0 20px;
+    padding: 50px 60px 0 60px;
 }
 
-.reason-else p {
+.text-else p {
     padding-bottom: 22px;
     text-align: center;
     color: #656565;
 }
 
-.reason-else p:first-of-type {
+.text-else p:first-of-type {
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 23px;
     font-size: 20px;
     line-height: 21px;
