@@ -497,6 +497,32 @@ a {
     color: #88b6d1;
 }
 
+.animate {
+    animation: swing 1.5s ease;
+    animation-iteration-count: 1;  
+}
+
+@keyframes swing {
+    15% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    65% {
+      transform: translateX(-3px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -920,7 +946,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 82px;
     height: 82px;
 }
 
