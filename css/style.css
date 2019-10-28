@@ -346,7 +346,7 @@ a {
     outline: none;
 }
 
-.form-title h3:active {
+.button-title:active {
     color: #857871;
 }
 
