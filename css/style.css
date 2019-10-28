@@ -6,7 +6,7 @@
 body {
     font-size: 14px;
     font-weight: 400;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
@@ -322,7 +322,7 @@ a {
 
 .form-title {
     width: 100%;
-    padding-top: 35px;
+    padding-top: 34px;
     padding-bottom: 31px;
     font-size: 20px;
     font-weight: 500;
@@ -339,9 +339,11 @@ a {
     cursor: pointer;
 }
 
-.form-title:active {
+.form-title:active, .form-title:focus {
     color: #857871;
     background-color: #503e33;
+    border-color: #503e33;
+    outline: none;
 }
 
 .form-title h3:active {
@@ -511,7 +513,7 @@ a {
 .visits a {
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 18px;
     color: #000000;
 }
 
@@ -676,7 +678,8 @@ a {
 }
 
 .fields-top input[type="checkbox"] {
-    display: none;
+    opacity: 0;
+    position: absolute;
 }
 
 .fields-top input[type="checkbox"]+label {
@@ -687,7 +690,23 @@ a {
     cursor: pointer;
 }
 
+.fields-top input[type="checkbox"]:disabled+label {
+    opacity: 0.6
+}
+
 .fields-top input[type="checkbox"]+label::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -40px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+}
+
+.fields-top input[type="checkbox"]:focus+label::after {
     content: "";
     position: absolute;
     top: -4px;
@@ -715,7 +734,7 @@ a {
     width: 320px;
     height: 100%;
     margin-left: auto;
-    margin-right: 73px;
+    margin-right: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -828,7 +847,7 @@ a {
 .max-range {
     position: absolute;
     top: -8px;
-    left: 80%;
+    left: 79%;
     width: 4px;
     height: 4px;
     background-color: #ababab;
@@ -902,12 +921,12 @@ a {
     flex-direction: row;
     align-items: center;
     min-height: 82px;
+    height: 82px;
 }
 
 .result {
     min-width: 165px;
     margin-left: 73px;
-    height: 100%;
 }
 
 .result p {
@@ -969,7 +988,6 @@ a {
 
 .arrows {
     width: 95px;
-    height: 100%;
     margin-left: auto;
     margin-right: 14px;
 }
