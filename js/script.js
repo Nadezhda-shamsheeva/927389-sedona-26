@@ -9,15 +9,18 @@ document.getElementById("openbtn").addEventListener("click", function () {
 });
 var submit = document.getElementById("send");
 submit.addEventListener("click", function (e) {
-    if (document.getElementById("arrival").value == "" || document.getElementById("departure").value == "" || document.getElementById("adults").value == "" || document.getElementById("children").value == "" ) {
+    if (document.getElementById("arrival").value == "" || document.getElementById("departure").value == "" || document.getElementById("adults").value == "" || document.getElementById("children").value == "") {
         e.preventDefault();
-        submit.classList.add("animate");
+        formSearch.classList.add("animate");
+        setTimeout(function () {
+            formSearch.classList.remove("animate");
+        }, 1000);
         return false;
-    } 
+    }
     else {
         return true;
     }
 });
 formSearch.addEventListener('change', function (e) {
-    submit.classList.remove("animate");
+    formSearch.classList.remove("animate");
 });
